@@ -1,6 +1,6 @@
 ---
 title: Coordinated Cloud-Based Scanning Operation Targets 75 Known Exposure Points in One Day
-date: May 27, 2025
+date: 2025-05-27
 categories: [RESEARCH]
 tags: [DNB,VULNS,RESEARCH]
 markdown: kramdown
