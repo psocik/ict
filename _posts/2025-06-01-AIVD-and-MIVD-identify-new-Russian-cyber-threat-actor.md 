@@ -1,0 +1,15 @@
+---
+title: AIVD and MIVD identify new Russian cyber threat actor
+date: May 27, 2025
+categories: [Cybersecurity]
+tags: [Russian threat actor,LAUNDRY BEAR,AIVD,MIVD] 
+---
+
+**Summary**  
+- The AIVD and MIVD (‘the Dutch services’) have identified a publicly unknown, highly probably Russian state-supported threat actor and have named the group **LAUNDRY BEAR**.  
+- LAUNDRY BEAR is responsible for conducting various cyber operations against Western government organisations since 2024 and is specifically interested in the armed forces, government organisations, defence contractors, social and cultural organisations, and digital service providers.  
+- This investigation into the threat actor was initiated because of an opportunistic cyber attack on the Dutch police in September 2024. During this attack, the work-related contact information of police employees was obtained by the threat actor. The Dutch services and the police have not been able to ascertain that other information was obtained. It is highly probable that other Dutch organisations were also a victim of this threat actor.  
+- LAUNDRY BEAR has successfully managed to fly below the radar by employing simple attack methods and attack vectors involving tools which are readily available on victims’ computers and are therefore difficult for organisations to detect and distinguish from other known Russian threat actors.  
+
+To read the complete article see:  
+[Full Article](https://www.aivd.nl/binaries/aivd_nl/documenten/publicaties/2025/05/27/aivd-en-mivd-onderkennen-nieuwe-russische-cyberactor/Advisory+AIVD+en+MIVD+Public+report+on+new+cyber+actor.pdf)
