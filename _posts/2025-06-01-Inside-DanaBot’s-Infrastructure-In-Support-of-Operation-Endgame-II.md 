@@ -1,0 +1,15 @@
+---
+title: Inside DanaBot’s Infrastructure: In Support of Operation Endgame II
+date: May 22, 2025
+categories: [RESEARCH]
+tags: DanaBot,Operation Endgame II,malware,cybersecurity 
+--
+## Executive Summary
+
+DanaBot first emerged in 2018 as a banking trojan but has since evolved into a versatile and persistent threat. While it initially focused on financial credential theft, it is now used for a range of purposes including information stealing and establishing access for follow-on activity such as ransomware. Despite years of activity, DanaBot remained highly operational through 2025, until it was dealt a significant blow as part of Operation Endgame II.
+
+DanaBot maintained an average of 150 active C2 servers per day, with roughly 1,000 daily victims across more than 40 countries. By C2-count, this was one of the largest "malware-as-a-service" platforms active in 2025, while the botnet size was relatively modest in terms of daily victims. Of these, Mexico and the United States consistently ranked among the most impacted. Its success can be partly attributed to its stealth; as of this writing, only 25 percent of its C2 servers had a VirusTotal detection score greater than zero, suggesting that a significant portion of its infrastructure remained undetected. This was likely due to selecting fewer targets than other loaders of its kind, as well as cycling operations around high profile events... 
+
+To read the complete article see:
+
+[Inside DanaBot’s Infrastructure: In Support of Operation Endgame II](https://www.team-cymru.com/post/inside-danabots-infrastructure-in-support-of-operation-endgame-ii)
