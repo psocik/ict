@@ -1,8 +1,0 @@
----
-title: Russian GRU Targeting Western Logistics Entities and Technology Companies
-date: 2025-05-20
-categories: [Cybersecurity]
-tags: [GRU,Cybersecurity,Logistics,Technology]
----
-
-This joint cybersecurity advisory (CSA) highlights a Russian state-sponsored cyber campaign targeting Western logistics entities and technology companies. This includes those involved in the coordination, transport, and delivery of foreign assistance to Ukraine. Since 2022, Western logistics entities and IT companies have faced an elevated risk of targeting by the Russian General Staff Main Intelligence Directorate (GRU) 85th Main Special Service Center (85th GTsSS), military unit 26165—tracked in the cybersecurity community under several names. The actors’ cyber espionage-oriented campaign, targeting technology companies and logistics entities, uses a mix of previously disclosed tactics, techniques, and procedures (TTPs). The authoring agencies expect similar targeting and TTP use to continue. Executives and network defenders at logistics entities and technology companies should recognize the elevated threat of unit 26165 targeting, increase monitoring and threat hunting for known TTPs and indicators of compromise (IOCs), and posture network defenses with a presumption of targeting. To read the complete article see: [Full Article](https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Cyber-Security/GRU_Western_Logistics.pdf?__blob=publicationFile&v=3)

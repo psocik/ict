@@ -1,8 +1,0 @@
----
-title: Observed Compromise Activity Targeting EOL Cisco Devices in National Telecom Infrastructure
-date: 2025-04-30
-categories: [RESEARCH]
-tags: [Cisco,CyberSecurity,Telecom]
----
-
-This report details the identification and analysis of publicly exposed, End-of-Life (EOL) Cisco network devices within the infrastructure of a Major Indian Telecommunications Provider. These devices were found running deprecated Cisco IOS-XE firmware (03.XX.XXE), rendering them vulnerable to multiple high-severity flaws, including CVE-2018-0171 (CVSS 9.8 RCE) associated with the exposed Cisco Smart Install protocol (TCP/4786). Investigation confirmed insecure configurations, such as default SNMP community strings, and detected active reconnaissance from external sources. Critically, outbound SSH connections were observed originating from at least one affected device (Victim-IP-1) to Command and Control (C2) infrastructure hosted on Alibaba Cloud in China (CN-C2-IP-1), confirmed via ASN lookup and geolocation. This observed C2 activity strongly indicates device compromise. The Tactics, Techniques, and Procedures (TTPs) employed are consistent with threat actors like the Typhoon Family, known to target critical infrastructure. This incident poses a significant risk and was reported to CERT-In and NCIIPC (acknowledged under Incident ID: CERTIn-84035325) and the affected entity. To read the complete article see: [full article](https://github.com/qbit6634/Indian-Telecom-Threat-Report).
