@@ -1,6 +1,5 @@
-
 ---
-title: Interlock ransomware: what you need to know
+title: Interlock ransomware what you need to know
 date: 2025-05-29 20:05:00 +0200
 categories: [MALWARE]
 tags: [Interlock,ransomware,cybersecurity] 
