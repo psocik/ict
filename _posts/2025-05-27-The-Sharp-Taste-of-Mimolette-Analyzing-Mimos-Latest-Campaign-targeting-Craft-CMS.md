@@ -14,9 +14,3 @@ To read the complete article see:
 [Read More](https://blog.sekoia.io/the-sharp-taste-of-mimolette-analyzing-mimos-latest-campaign-targeting-craft-cms/)  
 
 ***
-
-***Working at Team Cymru is more than a job — it’s a chance to be part of something meaningful.  
-Enjoy outstanding benefits, work with incredible people, and contribute to a mission that truly matters.  
-
-Explore open roles and join us:  
-[Careers at Team Cymru](https://www.team-cymru.com/careers)  
