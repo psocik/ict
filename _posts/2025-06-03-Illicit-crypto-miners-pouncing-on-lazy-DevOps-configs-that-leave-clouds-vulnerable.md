@@ -16,5 +16,3 @@ According to threat researchers Gili Tikochinski, Danielle Aminov, and Merav Bar
 To read the complete article see: [The Register](https://www.theregister.com/2025/06/03/illicit_miners_hashicorp_tools/) 
 
 Learn more here: [Wiz Blog](https://www.wiz.io/blog/jinx-0132-cryptojacking-campaign) 
-
-***Working at Team Cymru is more than a job — it’s a chance to be part of something meaningful. Enjoy outstanding benefits, work with incredible people, and contribute to a mission that truly matters. Explore open roles and join us: [Team Cymru Careers](https://www.team-cymru.com/careers) 
