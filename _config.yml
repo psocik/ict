@@ -36,14 +36,14 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: ictsec.pl
-  email: itcsec@ictsec.pl # change to your email address
+  email: ictsec@ictsec.pl # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
     # - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/itcsec
+    - https://www.linkedin.com/in/ictsecpl
 
 # Site Verification Settings
 webmaster_verifications:
