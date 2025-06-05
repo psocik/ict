@@ -1,0 +1,8 @@
+---
+title: The Bitter End Unraveling Eight Years of Espionage Antics—Part One
+date: 2025-06-04
+categories: [THREAT RESEARCH]
+tags: [ESPIONAGE,CYBERSECURITY,THREAT INTELLIGENCE,TA397]
+---
+
+This is a two-part blog series, detailing research undertaken in collaboration with Threatray. Part two of this blog series can be found on their website here.\n\nAnalyst note: Throughout this blog, researchers have defanged TA397-controlled indicators and modified certain technical details to protect investigation methods. \n\nKey findings:\n- Proofpoint Threat Research assesses it is highly likely that TA397 is a state-backed threat actor tasked with intelligence gathering in the interests of the Indian state.\n- The group frequently experiments with their delivery methods to load scheduled tasks. However, the resulting scheduled tasks, PHP URL patterns, inclusion of a victim’s computer name and username in the beaconing, and Let’s Encrypt certificates on attacker servers provide a high confidence fingerprint of detecting the group’s activity.  \n- TA397 will frequently target organizations and entities in Europe that have interests or a presence in China, Pakistan, and other neighboring countries on the Indian subcontinent. \n- TA397’s hands-on-keyboard and infrastructure operations align with the standard working hours of the Indian Standard Time (IST) timezone.\n\nTo read the complete article see: [here](https://www.proofpoint.com/us/blog/threat-insight/bitter-end-unraveling-eight-years-espionage-antics-part-one).
