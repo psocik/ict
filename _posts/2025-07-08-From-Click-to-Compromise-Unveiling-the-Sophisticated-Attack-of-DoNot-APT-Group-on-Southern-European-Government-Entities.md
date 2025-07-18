@@ -1,0 +1,14 @@
+---
+title: From Click to Compromise Unveiling the Sophisticated Attack of DoNot APT Group on Southern European Government Entities
+date: 2025-07-08
+categories: [APT]
+tags: [DONOT APT,CYBERSECURITY,ESPIONAGE,MALWARE]
+---
+
+The DoNot APT group, also identified by various security vendors as APT-C-35, Mint Tempest, Origami Elephant, SECTOR02, and Viceroy Tiger, has been active since at least 2016, and has been attributed by several vendors to have links to India. The global cybersecurity landscape is continually challenged by state-sponsored threat actors conducting espionage operations. The DoNot APT group (also known as APT-C-35), is believed to operate with a focus on South Asian geopolitical interests. This threat group typically targets government entities, foreign ministries, defense organizations, and NGOs especially those in South Asia and Europe. DoNot APT is known for using custom-built Windows malware, including backdoors like YTY and GEdit, often delivered through spear-phishing emails or malicious documents. Their operations are marked by persistent surveillance, data exfiltration, and long-term access, suggesting a strong cyber espionage motive. This report provides an analysis of a recent campaign orchestrated by the DoNot APT group.
+
+Trellix Advanced Research Center's ongoing hunting efforts have uncovered a sophisticated campaign attributed to the DoNot APT group targeting a European foreign affairs ministry highlighting the evolving tactics of the group. The attackers impersonated European defense officials mentioning their visit to Bangladesh and lured their targets to click on a malicious Google Drive link. This delivered a malicious RAR archive, ultimately deploying malware consistent with the group's known toolset. This incident underscores the group's persistent focus on governmental and diplomatic entities and their adaptability in using common cloud services for initial infection.
+
+The Trellix Advanced Research Center discovered this campaign by identifying the initial email chain, which was then blocked from customer inboxes via security signatures. This crucial starting point allowed us to further uncover the Tactics, Techniques, and Procedures (TTPs) and modus operandi (MO) of the campaign through correlation with existing threat intelligence. Other security organizations and threat hunting groups have also reported similar DoNot APT group activities, utilizing different initial infection methods.
+
+To read the complete article see: [Full Article](https://www.trellix.com/blogs/research/from-click-to-compromise-unveiling-the-sophisticated-attack-of-donot-apt-group-on-southern-european-government-entities/) 
