@@ -1,0 +1,8 @@
+---
+title: Czech cyber agency NUKIB flags Chinese espionage risks to critical infrastructure
+date: 2025-09-08
+categories: [APT]
+tags: [CYBERSECURITY,ESPIONAGE,CZECH REPUBLIC,INFRASTRUCTURE]
+---
+
+"The penetration of these technologies and devices into critical industries (such as transport, energy, healthcare, public administration and others) is growing and will continue to grow in the future. Current critical infrastructure systems are increasingly dependent on storing and processing data in cloud storage and on network connectivity that allows remote operation and updates.\n\n"Another risk factor is the increasing number of devices that are connected to the Internet, also transmit data and are remotely managed by their suppliers. Moreover, examples of risky products and services that may transmit data to or are managed from the PRC include IP cameras, PV inverters, so-called "smart meters", healthcare, cloud storage, highly complex personal devices (phones, watches), connected vehicles (electric cars), large language models and others.\n\nCzech cybersecurity agency pointed out that in China, laws and politics give authorities broad power to access data, pressure private firms, and compel their cooperation in state-led espionage.\n\nTo read the complete article see:  [Security Affairs](https://securityaffairs.com/181976/intelligence/czech-cyber-agency-nukib-flags-chinese-espionage-risks-to-critical-infrastructure.html) 
