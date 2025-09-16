@@ -1,0 +1,8 @@
+---
+title: 40 npm Packages Compromised in Supply Chain Attack Using bundle.js to Steal Credentials
+date: 2025-09-16
+categories: [SECURITY]
+tags: [NPM,SUPPLY CHAIN ATTACK,CREDENTIALS,MALWARE]
+---
+
+The compromised versions include a function (NpmModule.updatePackage) that downloads a package tarball, modifies package.json, injects a local script (bundle.js), repacks the archive, and republishes it, enabling automatic trojanization of downstream packages. The end goal of the campaign is to search developer machines for secrets using TruffleHog's credential scanner and transmit them to an external server under the attacker's control. The attack is capable of targeting both Windows and Linux systems.\n\nThe malicious JavaScript code ("bundle.js") injected into each of the trojanized packages is designed to download and run TruffleHog, a legitimate secret scanning tool, using it to scan the host for tokens and cloud credentials, such as GITHUB_TOKEN, NPM_TOKEN, AWS_ACCESS_KEY_ID, and AWS_SECRET_ACCESS_KEY.\n\nStepSecurity, which also shared details of the campaign, said the attack demonstrates a concerning evolution in supply chain threats, given that the malware includes a self-propagating mechanism enabling automatic infection of downstream packages. This behavior creates a "cascading compromise across the ecosystem."\n\nTo read the complete article see: [The Hacker News](https://thehackernews.com/2025/09/40-npm-packages-compromised-in-supply.html)
