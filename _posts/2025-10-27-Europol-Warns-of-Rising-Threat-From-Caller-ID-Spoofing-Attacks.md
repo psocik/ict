@@ -17,4 +17,4 @@ The report identifies three top priorities for EU action:
 - Enhanced cross-border collaboration among law enforcement, regulators and industry stakeholders.
 - Regulatory convergence to clarify rules around caller ID use and facilitate lawful traceback requests.
 
-To read the complete article, see: [Infosecurity Magazine](httpss://www.infosecurity-magazine.com/news/europol-warns-id-spoofing-attacks/).
+To read the complete article, see: [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/europol-warns-id-spoofing-attacks/).
