@@ -9,4 +9,4 @@ UK-based Iranian activist Nariman Gharib claimed to have been sent a copy of the
 
 Founders Farzin Karimi Mazlganchai and Seyed Mojtaba Mostafavi are sanctioned by the UK, US, and EU for their role in establishing Ravin Academy. A PwC report on the school credibly ties both founders to attacks carried out by the MOIS-linked attack group Yellow Nix/MuddyWater/APT34.
 
-[Read the complete article here.](httpss://www.theregister.com/2025/10/27/breach_iran_ravin_academy/)  
+[Read the complete article here.](https://www.theregister.com/2025/10/27/breach_iran_ravin_academy/)  
