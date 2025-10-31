@@ -13,7 +13,7 @@ In the attack devised by AI security company SPLX, a bad actor can set up websit
 
 The disclosure comes as an analysis of browser agents against 20 of the most common abuse scenarios, ranging from multi-accounting to card testing and support impersonation, discovered that the products attempted nearly every malicious request without the need for any jailbreaking, the hCaptcha Threat Analysis Group (hTAG) said. Claude Computer Use and Gemini Computer Use, on the other hand, have been identified as capable of executing dangerous account operations like password resets without any constraints, with the latter also demonstrating aggressive behavior when it comes to brute-forcing coupons on e-commerce sites. hTAG also tested the safety measures of Manus AI, uncovering that it executes account takeovers and session hijacking without any issue, while Perplexity Comet runs unprompted SQL injection to exfiltrate hidden data.
 
-To read the complete article see: [httpss://thehackernews.com/2025/10/new-ai-targeted-cloaking-attack-tricks.html](https://thehackernews.com/2025/10/new-ai-targeted-cloaking-attack-tricks.html)
+To read the complete article see: [https://thehackernews.com/2025/10/new-ai-targeted-cloaking-attack-tricks.html](https://thehackernews.com/2025/10/new-ai-targeted-cloaking-attack-tricks.html)
 
 \---
 
