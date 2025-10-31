@@ -17,4 +17,4 @@ In their latest advisory, Silent Push shared a series of key indicators to watch
 - Unusual Golang-based command-and-control communications;
 - Unknown C++ QT applications executing within Windows, macOS or Linux environments.
 
-To read the complete article see: [Infosecurity Magazine](httpss://www.infosecurity-magazine.com/news/adaptixc2-malicious-payload/) 
+To read the complete article see: [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/adaptixc2-malicious-payload/) 
