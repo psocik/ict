@@ -13,6 +13,4 @@ Hacktivists exploit internet-facing industrial control systems (ICS) devices to 
 
 Each organization should maintain an up-to-date inventory of internet-accessible ICS devices, replace direct exposure with VPNs and two-factor authentication, and apply the Cyber Centre’s Readiness Goals to strengthen defenses. When exposure is unavoidable, teams should implement intrusion prevention systems, run regular penetration tests, and manage vulnerabilities continuously. Municipal and corporate leaders should work directly with vendors to ensure secure deployment, maintenance, and decommissioning of all systems. Critical infrastructure organizations are recommended to execute regular tabletop exercises to refine coordination and improve response to incidents. If they detect suspicious activity, organizations should report it promptly to the Cyber Centre or RCMP to support Canada’s nationwide effort to strengthen cyber resilience.
 
-For the complete article, see: [Security Affairs](httpss://securityaffairs.com/184007/hacktivism/hacktivists-breach-canadas-critical-infrastructure-cyber-agency-warns.html) 
-
-🔗 [Apply for our next conference in Kuala Lumpur on December 9th and 10th, 2025](https://risemalaysia.eventify.io/p/#/overview) with the passcode: "6f&%dX".
+For the complete article, see: [Security Affairs](https://securityaffairs.com/184007/hacktivism/hacktivists-breach-canadas-critical-infrastructure-cyber-agency-warns.html) 
