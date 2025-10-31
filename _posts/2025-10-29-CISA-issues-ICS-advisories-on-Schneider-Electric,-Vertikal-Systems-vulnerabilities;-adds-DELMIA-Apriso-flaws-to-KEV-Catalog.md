@@ -14,6 +14,4 @@ An improper input validation vulnerability exists that could lead to denial of s
 Apart from these ICS advisories, the CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog following evidence of active exploitation. The newly listed flaws are CVE-2025-6204, a Dassault Systèmes DELMIA Apriso code injection vulnerability, and CVE-2025-6205, a missing authorization vulnerability in the same platform. These vulnerabilities are common attack vectors for malicious actors and present significant risks to the federal enterprise.
 
 To read the complete article see:  
-[Read More](httpss://industrialcyber.co/cisa/cisa-issues-ics-advisories-on-schneider-electric-vertikal-systems-vulnerabilities-adds-delmia-apriso-flaws-to-kev-catalog/) 
-
-> Note: Information regarding a conference in Kuala Lumpur on December 9th and 10th, 2025, is not included as it is not related to news.
+[Read More](https://industrialcyber.co/cisa/cisa-issues-ics-advisories-on-schneider-electric-vertikal-systems-vulnerabilities-adds-delmia-apriso-flaws-to-kev-catalog/) 
