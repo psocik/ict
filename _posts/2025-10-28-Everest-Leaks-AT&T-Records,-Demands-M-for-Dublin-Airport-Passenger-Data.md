@@ -34,4 +34,4 @@ According to their claims, the data includes the following information:
 22. First and second non-consecutive baggage tag plate numbers  
 23. Selectee indicator and international document verification status  
 
-To read the complete article see: [Hackread - Everest Leaks AT&T Records](httpss://hackread.com/everest-att-leak-dublin-airport-data/)  
+To read the complete article see: [Hackread - Everest Leaks AT&T Records](https://hackread.com/everest-att-leak-dublin-airport-data/)  
