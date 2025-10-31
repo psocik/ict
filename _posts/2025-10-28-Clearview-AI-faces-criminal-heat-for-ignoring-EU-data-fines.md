@@ -11,4 +11,4 @@ The complaint focuses largely on Clearview's apparent disregard for fines from F
 
 Scraping data is not inherently illegal; however, Clearview's sweeping collection of social media photos for commercial gain has repeatedly violated GDPR regulations across Europe. Austria ruled the company's practices illegal in 2023, though it imposed no fine. Noyb is using a provision in Austria's own implementation of the GDPR that allows criminal proceedings to be brought against managers of organizations that flout data protection laws.
 
-To read the complete article see: [The Register](httpss://www.theregister.com/2025/10/28/noyb_criminal_charges_clearview/) 
+To read the complete article see: [The Register](https://www.theregister.com/2025/10/28/noyb_criminal_charges_clearview/) 
