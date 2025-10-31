@@ -13,4 +13,4 @@ She noted that after RansomHub went dark in April 2025, its affiliates are rumor
 
 She added that the attacks on manufacturers can also lead to data breaches. While not often as vast as breaches in other sectors, such as the healthcare sector, they can still have serious consequences. For example, Qilin recently claimed an attack on Nissan’s design agency, Nissan Creative Box. Qilin says it stole more than 4 TB of data, including design data that could lead to product information being leaked and Nissan’s business strategy being interrupted/impeded by competitors.
 
-To read the complete article see: [Qilin ransomware escalates rapidly in 2025](httpss://industrialcyber.co/ransomware/qilin-ransomware-escalates-rapidly-in-2025-targeting-critical-sectors-with-700-attacks-amid-ransomhub-shutdown/) .
+To read the complete article see: [Qilin ransomware escalates rapidly in 2025](https://industrialcyber.co/ransomware/qilin-ransomware-escalates-rapidly-in-2025-targeting-critical-sectors-with-700-attacks-amid-ransomhub-shutdown/) .
