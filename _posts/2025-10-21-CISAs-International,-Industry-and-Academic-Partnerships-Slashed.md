@@ -1,6 +1,6 @@
 ---
 title: CISA’s International, Industry and Academic Partnerships Slashed
-date: 2026-10-21
+date: 2025-10-21
 categories: [RESEARCH]
 tags: [CISA,CYBERSECURITY,PARTNERSHIPS,GOVERNMENT]
 ---
