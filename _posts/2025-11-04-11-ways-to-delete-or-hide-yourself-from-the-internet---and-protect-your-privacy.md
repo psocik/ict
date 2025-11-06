@@ -1,0 +1,16 @@
+---
+title: 11 ways to delete or hide yourself from the internet - and protect your privacy
+date: 2025-11-04
+categories: [RESEARCH]
+tags: [PRIVACY,INTERNET,SECURITY]
+---
+
+Maintaining digital privacy requires constant attention due to the vast online footprint we create through internet-connected devices. Information, even after deletion, can resurface, impacting career prospects, reputation, and relationships. Publicly available information is often scraped for targeted marketing, and in some cases, individuals may need to wipe their online slate clean due to abuse or stalking. While complete removal is near impossible, there are steps to regain control over personal data.
+
+One starting point involves using search engines like Google and Bing to uncover what information is publicly available. Crucially, users should also check what AI chatbots like ChatGPT reveal about them, as these systems can summarize available information, including career details, education, and online posts. For EU citizens, the right to be forgotten allows requesting the removal of information from Google search results via a specific form. Google reviews these requests, weighing public interest against individual rights under data protection law, considering factors like professional life and past convictions. At the time of writing, Google has received roughly 1.88 million delisting requests and around 7.4 million URL delisting requests with over three million URLs delisted after review. US residents may be able to remove limited information, such as phone numbers or home addresses, that could be used for identity theft.
+
+Another essential step is to check if your account information has been compromised in data breaches using services like Have I Been Pwned, run by cybersecurity expert Troy Hunt. If an email or phone number is found to be "pwned," users should change passwords used on compromised accounts and avoid reusing them. Furthermore, Google Account users can conduct privacy and security checkups. The privacy checkup allows control over data collection, including search queries, location history, web and app activities, and YouTube history, with the option to automatically delete data older than three months. The security checkup identifies devices with account access and third-party applications with granted permissions. Google Takeout enables users to download an archive of their data, and the deletion service allows removing select products or the entire account.
+
+Data brokers present a significant challenge, collecting data through scraping, bots, and automated collection. To combat this, data removal services such as Incogni (operated by Surfshark) can automatically send removal requests to U.S. data brokers, and implement suppression lists to prevent reacquisition of your data.
+
+To read the complete article see: [11 ways to delete or hide yourself from the internet - and protect your privacy](https://www.zdnet.com/article/11-ways-to-delete-or-hide-yourself-from-the-internet-and-protect-your-privacy/).
