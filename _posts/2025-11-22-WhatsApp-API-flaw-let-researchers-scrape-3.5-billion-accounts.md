@@ -1,0 +1,8 @@
+---
+title: WhatsApp API flaw let researchers scrape 3.5 billion accounts
+date: 2025-11-22
+categories: [SECURITY]
+tags: [WHATSAPP,API,DATA BREACH]
+---
+
+Researchers compiled a list of **3.5 billion WhatsApp mobile phone numbers** and associated personal information by abusing a contact-discovery API that lacked rate limiting.\n\nThe researchers from the **University of Vienna** and **SBA Research** used WhatsApp's contact-discovery feature, which lets you submit a phone number to the platform's **GetDeviceList API** endpoint to determine whether a phone number is associated with an account and what devices were used.\n\nThey ran the entire operation from a single university server using just five authenticated sessions, initially expecting to get caught by WhatsApp. However, the platform never blocked the accounts, never throttled their traffic, never restricted their IP address, and never reached out despite all the abusive activity coming from one device.\n\nFinally, when the researchers compared their findings with the **2021 Facebook phone-number scrape**, they found that **58% of the leaked Facebook numbers were still active on WhatsApp in 2025**. The researchers explain that large-scale phone number leaks are so damaging because they can remain useful in other malicious behavior for years.\n\n[Read the full article here](https://www.bleepingcomputer.com/news/security/whatsapp-api-flaw-let-researchers-scrape-35-billion-accounts/) 😊.
