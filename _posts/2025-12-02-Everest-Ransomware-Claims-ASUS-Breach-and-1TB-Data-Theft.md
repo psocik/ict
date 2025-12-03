@@ -1,0 +1,14 @@
+---
+title: Everest Ransomware Claims ASUS Breach and 1TB Data Theft
+date: 2025-12-02
+categories: [CYBERSECURITY]
+tags: [RANSOMWARE,DATA BREACH,CYBERSECURITY]
+---
+
+The Everest ransomware group has announced a claimed compromise of ASUS, a major global hardware and electronics manufacturer. According to a post on the group’s dark web leak site, they assert possession of more than 1TB of stolen data, prominently featuring what they describe as "camera source code." This claim comes with a direct demand for ASUS to initiate contact via the encrypted messaging platform Qtox within a strict 21-hour deadline. While the specific ransom amount remains undisclosed, the alleged theft of such a substantial volume of data, especially proprietary code, raises immediate concerns for the cybersecurity community.
+
+The "camera source code" claimed by Everest likely refers to highly sensitive proprietary firmware or software components integrated into ASUS devices equipped with cameras, such as laptops, smartphones, and other consumer electronics. This could encompass low-level control code for camera modules, internal drivers crucial for hardware-software interaction, or even entire applications tied to image processing and device integration. Such code could reveal intellectual property, design methodologies, and potential vulnerabilities. This incident follows a series of recent, high-profile claims by Everest, which in the past two weeks alone have targeted organizations including Under Armour, Brazil’s Petrobras, and Spain’s Iberia airline, with reported data thefts ranging from user data and internal documentation to claims of full network access. ASUS has not yet confirmed or denied the alleged breach, leaving the precise scope and veracity of Everest's claims unverified.
+
+For security professionals, this alleged compromise, if credible, marks a critical development, particularly given ASUS's history. The company previously faced the sophisticated state-backed ShadowHammer attack in 2019, which saw its Live Update utility compromised to deliver malware. A second significant breach involving 1TB of data, especially proprietary source code, could have far-reaching implications beyond just financial demands. Theft of source code can enable threat actors to discover zero-day vulnerabilities, facilitate advanced persistent threats (APTs) against supply chains, or lead to the creation of targeted exploits for ASUS customers. Organizations relying on ASUS hardware should closely monitor official statements from the company and prepare for potential advisories or patches should the breach be confirmed. The incident underscores the persistent and evolving threat posed by ransomware groups like Everest, who are increasingly targeting intellectual property and core operational assets.
+
+For more information, read the complete article [here](https://hackread.com/everest-ransomware-asus-breach-1tb-data/).
