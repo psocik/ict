@@ -1,0 +1,18 @@
+---
+title: Portugal updates cybercrime law to exempt security researchers
+date: 2025-12-07
+categories: [POLICY]
+tags: [CYBERCRIME,SECURITY RESEARCHERS,PORTUGAL]
+---
+
+Portugal has significantly updated its cybercrime law, introducing a crucial legal safe harbor for security researchers operating in good faith. This modification aims to exempt specific actions from criminal liability, which were previously classified as illegal system access or illegal data interception. The new provision, designated as Article 8.o-A and titled "Acts not punishable due to public interest in cybersecurity," establishes conditions under which hacking-related activities become non-punishable, provided they are undertaken with the sole purpose of identifying vulnerabilities and contributing to overall cybersecurity resilience through responsible disclosure.
+
+This legislative change reflects a growing recognition of the vital role ethical hacking plays in strengthening national digital defenses.
+
+To qualify for this exemption from criminal liability, security researchers must adhere to a stringent set of criteria. The research must exclusively aim at identifying vulnerabilities not introduced by the researcher themselves, with the primary goal of improving cybersecurity through subsequent disclosure. Critically, researchers cannot seek or receive any economic benefit beyond normal professional compensation for their efforts. A mandatory condition requires the immediate reporting of any discovered vulnerability to the system owner, any relevant data controller, and the National Cybersecurity Centre (CNCS). Furthermore, the scope of actions taken must be strictly limited to what is necessary for vulnerability detection, ensuring no disruption of services, alteration or deletion of data, or any other form of harm occurs.
+
+The new framework also imposes strict limitations on the methodologies employed and data handling. Researchers are explicitly prohibited from using certain techniques, including Denial-of-Service (DoS) or Distributed Denial-of-Service (DDoS) attacks, social engineering, phishing, password theft, intentional data alteration, system damage, or malware deployment. Any unlawful processing of personal data under GDPR is also strictly forbidden. Data obtained during the research must remain confidential and is mandated to be deleted within 10 days of the vulnerability being successfully fixed. Even in scenarios where actions are performed with the explicit consent of the system owner, any found vulnerabilities must still be reported to the CNCS, reinforcing the public interest aspect of cybersecurity discovery.
+
+Portugal's progressive amendment clearly defines the boundaries of ethical security research while offering essential legal protection for well-intentioned hackers. This move aligns with a broader international trend recognizing the value of proactive vulnerability discovery. In November 2024, Germany’s Federal Ministry of Justice introduced a draft law proposing similar protections for researchers who responsibly report security flaws. Earlier, in May 2022, the U.S. Department of Justice (DOJ) revised its federal prosecution policies for Computer Fraud and Abuse Act (CFAA) violations, incorporating an exemption for "good-faith" research. Such legal frameworks are crucial for fostering an environment where security research is not only acknowledged but actively encouraged, enabling professionals to uncover and report vulnerabilities without the looming threat of legal repercussions.
+
+To read the complete article see: [Bleeping Computer](https://www.bleepingcomputer.com/news/security/portugal-updates-cybercrime-law-to-exempt-security-researchers/) 
