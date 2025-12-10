@@ -1,0 +1,17 @@
+---
+title: Multiple India-based CCTV Cameras
+date: 2025-12-09
+categories: [VULNERABILITIES]
+tags: [CCTV,VULNERABILITY,SECURITY,CISA]
+---
+
+A critical vulnerability, CVE-2025-13607, has been identified in multiple India-based CCTV camera models from vendors D-Link, Sparsh Securitech, and Securus CCTV. Rated with a CVSS v4 score of 9.3 and CVSS v3 score of 9.4, this vulnerability is categorized as "Missing Authentication for Critical Function" (CWE-306) and is remotely exploitable with low attack complexity. Successful exploitation could lead to significant information disclosure, including the capture of camera account credentials, posing a severe risk to organizational security, particularly within Commercial Facilities where these devices are deployed across India.
+
+The technical details indicate that a malicious actor can gain access to camera configuration information and credentials without authentication simply by accessing a specific vulnerable URL. This unauthenticated access allows for the bypass of critical security controls, compromising the confidentiality and integrity of the device and its data. Specifically, the D-Link DCS-F5614-L1 camera model, versions v1.03.038 and prior, are confirmed to be affected. While specific affected models for Sparsh Securitech and Securus CCTV are currently unavailable, users of these brands are urged to exercise extreme caution and seek information from their respective vendors. The vulnerability was reported to CISA by researcher Souvik Kandar.
+
+Vendor responses to this critical flaw have been mixed. D-Link has proactively released a security advisory and a software update for the affected DCS-F5614-L1 camera model, urging all users to install these updates and validate their success. In contrast, Securus CCTV and Sparsh Securitech have not responded to CISA's requests for coordination. This lack of response means users of cameras from these vendors must independently reach out to customer service to determine if their specific models are affected and inquire about potential patches or workarounds, leaving them in a precarious position regarding immediate remediation.
+
+To mitigate the risk of exploitation, CISA strongly recommends several defensive measures. Organizations should minimize network exposure for all control system devices, ensuring they are not accessible from the Internet. It is crucial to locate control system networks and remote devices behind firewalls and isolate them from broader business networks. When remote access is indispensable, more secure methods such as Virtual Private Networks (VPNs) should be utilized, with the understanding that VPNs themselves require constant updating and are only as secure as their connected devices. Furthermore, organizations should perform thorough impact analyses and risk assessments before deploying any defensive measures and implement comprehensive defense-in-depth strategies for ICS assets. While no public exploitation specifically targeting this vulnerability has been reported to CISA, proactive adherence to these security best practices is essential for protecting critical infrastructure.
+
+To read the complete article see:
+[Full Article](https://www.cisa.gov/news-events/ics-advisories/icsa-25-343-03)
