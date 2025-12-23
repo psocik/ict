@@ -1,0 +1,18 @@
+---
+title: Hackers Abuse Popular Monitoring Tool Nezha as a Stealth Trojan
+date: 2025-12-22
+categories: [MALWARE]
+tags: [HACKING,CYBERSECURITY,TROJAN]
+---
+
+A popular software tool used by website owners to check their server’s health is now being used by hackers to take complete control of computers. Researchers at the cybersecurity firm Ontinue have discovered that an open-source tool called Nezha is being repurposed as a Remote Access Trojan (RAT). This allows outsiders to sneak into a system and stay there without being noticed. Because it is legitimate software used by thousands of professionals, security apps usually ignore it. 
+
+According to researchers, the software shows “0/72 detections” on the VirusTotal scanner. In short, it isn’t actually malware; it’s just a normal tool being exploited by hackers. Nezha is particularly dangerous because it is “full-featured out of the box.” Unlike many hacking tools that require complex setup, Nezha works immediately after installation. An attacker “doesn’t need to compile custom payloads” or link multiple tools together to get what they want; it is a one-stop shop for taking over a device.
+
+Once this “agent” is active, it gives the attacker “SYSTEM/root level access,” which is the highest permission a computer has. With this power, they can manage files, run commands, and even open an interactive web terminal to watch the system in real-time. Furthermore, it works on almost anything from Windows and Linux to macOS and even home internet routers. This wide “cross-platform support” means a hacker can manage hundreds of stolen devices from a single dashboard. Nezha also has a built-in advantage: its internet traffic looks completely normal. The tool communicates using standard web protocols that “resemble normal monitoring telemetry” rather than obvious hacking signals.
+
+This isn’t the first time Nezha has been spotted in the wrong hands. Back in October 2025, another firm, Huntress, found similar attacks targeting organisations across East Asia, including Japan and South Korea. In this latest case, Ontinue’s team noted that the hackers used a script containing Simplified Chinese messages, suggesting a native speaker. They also discovered the hacker’s command centre was hosted on Alibaba Cloud services in Japan.
+
+To stay safe, experts suggest that companies should proactively hunt for Nezha on their systems. If it hasn’t been officially approved by the IT department, its presence is a major red flag. Mayuresh Dani, Security Research Manager at Qualys Threat Research Unit, explained that this reflects a strategy where attackers “systematically abuse legitimate software to achieve persistence and lateral movement while evading signature-based defences.” Dani warned that because Nezha provides such high-level access, it helps attackers “cut development time to reliably execute remote commands” and access files. He urged organisations to “stop viewing tools as either malicious or benign, and instead focus on usage patterns and context.” Additionally, John Gallagher, Vice President of Viakoo Labs at Viakoo, noted that the situation is a call for a stronger “Defence in Depth” approach. He pointed out that while agent-based tools like Nezha are useful, they inherently carry more risk because they live directly on the device.
+
+To read the complete article see: [Read More](https://hackread.com/hackers-abuse-monitoring-tool-nezha-trojan/).
