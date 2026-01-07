@@ -1,0 +1,16 @@
+---
+title: Coinbase insider who sold customer data to criminals arrested in India
+date: 2026-01-06
+categories: [ARREST]
+tags: [COINBASE,CYBERSECURITY,DATA BREACH,CUSTOMER SERVICE,INDIA]
+---
+
+Police in India have arrested a former Coinbase customer service agent who is believed to have been bribed by cybercriminal gangs to access sensitive customer information. Coinbase CEO Brian Armstrong announced the arrest on Twitter. "We have zero tolerance for bad behavior and will continue to work with law enforcement to bring bad actors to justice," tweeted Armstrong. "Thanks to the Hyderabad Police in India, an ex-Coinbase customer service agent was just arrested. Another one down and more still to come."
+
+The arrest relates to a data breach that Coinbase disclosed back in May 2025, when it revealed that support staff had been bribed by criminals to hand over customer records. The scheme had actually begun months before, although the firm's internal security teams did not spot any suspicious activity until January. When the hackers finally made contact in May, they demanded a US $20 million ransom and threatened to leak the details of nearly 70,000 customers on the dark web if Coinbase didn't pay up - including names, addresses, phone numbers, email addresses, images of government IDs, masked Social Security numbers, and bank account information. Coinbase refused to co-operate with its extortionists. Instead, the cryptocurrency exchange announced that it would put that same US $20 million towards a reward fund for information leading to the arrest and conviction of those responsible for the attack.
+
+In interviews since the incident, Armstrong has described how cybercriminal gangs were offering US $250,000 bribes to customer service representatives to leak sensitive data. "We started getting customer support agents get offered like 250 grand bribes to turn over customer information. You offer 1,000 people 250k to turn over some information like that. They're going to find one or two bad apples. And then the attackers would call up our customers and say, hey, here's Coinbase support. Are you blah blah blah who lives at this address? And it would create credibility and they would try to tell them, hey, your account has been compromised. Like you need to move your funds immediately and like sort of trick people into sending their funds to the attacker." It is estimated that the breach could ultimately cost Coinbase up to US $400 million, including reimbursements to affected customers.
+
+The newly-reported arrest has led some critics to suggest that Coinbase's decision to outsource customer service operations overseas may have contributed to the problem in the first place. It's a reminder that no matter how sophisticated your technical security measures might be, the human element remains a persistent vulnerability – particularly when customer support functions are outsourced to third parties who may be harder to vet and monitor.
+
+To read the complete article see: [here](https://www.bitdefender.com/en-us/blog/hotforsecurity/coinbase-insider-who-sold-customer-data-to-criminals-arrested-in-india).
