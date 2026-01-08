@@ -1,0 +1,14 @@
+---
+title: Breaking Down the Attack Surface of the Kenwood DNR1007XR – Part One
+date: 2026-01-07
+categories: [RESEARCH]
+tags: [KENWOOD,DNR1007XR,PWN2OWN,AUTOMOTIVE,VULNERABILITY RESEARCH]
+---
+
+For the upcoming Pwn2Own Automotive contest, a total of 3 head units have been selected. One of these is the double DIN Kenwood DNR1007XR that offers a variety of functionality such as Android Auto, Apple CarPlay, USB media playback, wireless mirroring, and more. This blog post presents photos of the DNR1007XR, including highlighting interesting internal components. A hidden debugging interface is also detailed which can be leveraged to obtain a shell. Tucked away behind the screen is a full-sized SD card slot that can be accessed by tilting the screen downwards. The SD card is used to play audio/video files as well as updating map data. This seems like an attack surface worth researching. There's also a single USB port routed from the back of the unit that is used for: Wired Android Auto, Wired Apple CarPlay, Audio playback, and Video playback.
+
+Moving on to the internals, the DNR1007XR comprises multiple interconnected boards, with the most interesting board being located at the top of the unit. Removing a few screws and metal plates gives access to this board, which contains the main processor, eMMC, flash, and a Bluetooth / WiFi radio module. Towards the center is the main Dolphin+ TCC8034 System on a Chip (SoC), which is marketed as an "IVI and Cluster solution" that supports running Android, Linux, and QNX. The SoC contains two 32-bit ARM cores and is running Linux. Further to the right is a Kioxia THGBMJG7C2LBAU8 16GB eMMC chip which contains the main device firmware. Below the eMMC chip and to the left is a Winbond 25Q256JVFM 256Mb serial flash chip that contains unknown data. Finally, to the left of the SoC is a Murata radio that handles Wi-Fi and Bluetooth operations. The FCC documents for the DNR1007XR state that this is the Murata LBEE6ZZ1WD-334. This module has no public datasheet available and isn't listed on Murata's site.
+
+On the right edge of the main board is a suspicious-looking connector that lines up with a thin gap in the outer housing. This connector exposes a Linux login prompt over UART at 115200bps. Logging in with the correct credentials will spawn a shell. This blog post provides enough information to kickstart vulnerability research against the DNR1007XR. Keep an eye out for another blog coming this Friday that covers the threat landscape of the DNR1007XR. We are looking forward to Automotive Pwn2Own again in January 2026, and we will see if IVI vendors have improved their product security.
+
+To read the complete article see: [https://www.thezdi.com/blog/2026/1/6/breaking-down-the-attack-surface-of-the-kenwood-dnr1007xr-part-one](https://www.thezdi.com/blog/2026/1/6/breaking-down-the-attack-surface-of-the-kenwood-dnr1007xr-part-one) 
