@@ -1,0 +1,16 @@
+---
+title: The State of Trusted Open Source
+date: 2026-01-08
+categories: [RESEARCH]
+tags: [OPEN SOURCE,SOFTWARE,VULNERABILITIES,AI]
+---
+
+Chainguard, the trusted source for open source, has a unique view into how modern organizations actually consume open source software and where they run into risk and operational burdens. Across a growing customer base and an extensive catalog of over 1800 container image projects, 148,000 versions, 290,000 images, and 100,000 language libraries, and almost half a billion builds, they can see what teams pull, deploy, and maintain day-to-day, along with the vulnerabilities and remediation realities that come hand in hand. That's why they created The State of Trusted Open Source, a quarterly pulse on the open source software supply chain. As they analyzed anonymized product usage and CVE data, the Chainguard team noticed common themes around what open source engineering teams are actually building with and the risks associated.
+
+Here's what they found: AI is reshaping the baseline stack, with Python leading the way as the most popular open source image among Chainguard's global customer base, powering the modern AI stack. Over half of production happens outside of the most popular projects. Most teams may standardize on a familiar set of images, but real-world infrastructure is powered by a broad portfolio that extends far beyond the top 20 most popular, which they refer to in this report as longtail images.
+
+Popularity doesn't map to risk: 98% of the vulnerabilities found and remediated in Chainguard images occurred outside of the top 20 most popular projects. That means the biggest security burden accumulates in the less-visible part of the stack, where patching is hardest to operationalize. Compliance can be the catalyst for action. FIPS is just one example, focused specifically on U.S. federal encryption standards. Even so, 44% of Chainguard customers run a FIPS image in production, underscoring how frequently regulatory needs shape real-world software decisions. Trust is built on remediation speed, with Chainguard eliminating Critical CVEs, on average, in under 20 hours.
+
+This report analyzes 1800+ unique container image projects, 10,100 total vulnerability instances, and 154 unique CVEs tracked from September 1, 2025, through November 30, 2025. Across all regions, the top images are familiar staples: Python (71.7% of customers), Node (56.5%), nginx (40.1%), go (33.5%), redis (31.4%), followed by JDK, JRE, and a cluster of core observability and platform tooling like Grafana, Prometheus, Istio, cert-manager, argocd, ingress-nginx, and kube-state-metrics. It's not surprising to see Python leading the way globally, as the default glue language for the modern AI stack. Teams typically standardize on Python for model development, data pipelines, and increasingly for production inference services as well.
+
+To read the complete article see: [The Hacker News](https://thehackernews.com/2026/01/the-state-of-trusted-open-source.html) 
