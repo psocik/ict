@@ -1,0 +1,18 @@
+---
+title: A single click mounted a covert, multistage attack against Copilot
+date: 2026-01-14
+categories: [SECURITY]
+tags: [MICROSOFT,COPILOT,SECURITY,ATTACK,VULNERABILITY]
+---
+
+Microsoft has fixed a vulnerability in its Copilot AI assistant that allowed hackers to pluck a host of sensitive user data with a single click on a URL. The hackers in this case were white-hat researchers from security firm Varonis. The net effect of their multistage attack was that they exfiltrated data, including the target’s name, location, and details of specific events from the user’s Copilot chat history. The attack continued to run even when the user closed the Copilot chat, with no further interaction needed once the user clicked the link in the email. The attack and resulting data theft bypassed enterprise endpoint security controls and detection by endpoint protection apps.
+
+> “Once we deliver this link with this malicious prompt, the user just has to click on the link and the malicious task is immediately executed,” Varonis security researcher Dolev Taler told Ars. “Even if the user just clicks on the link and immediately closes the tab of Copilot chat, the exploit still works.” The base URL pointed to a Varonis-controlled domain. Appended to the end was a long series of detailed instructions in the form of a q parameter, which Copilot and most other LLMs use to input URLs directly into a user prompt. When clicked, the parameter caused Copilot Personal to embed personal details into web requests. This prompt extracted a user secret (“HELLOWORLD1234!”) and sent a web request to the Varonis-controlled server along with “HELLOWORLD1234!” added to the right. The disguised .jpg contained further instructions that sought details, including the target’s user name and location. This information, too, was passed in URLs Copilot opened.
+
+Like most large language model attacks, the root cause of the Varonis exploit is the inability to delineate a clear boundary between questions or instructions entered directly by the user and those included in untrusted data in a request. This gives rise to indirect prompt injections, which no LLM has been able to prevent. Microsoft’s recourse in this case has been to build guardrails into Copilot that are designed to prevent it from leaking sensitive data. However, Varonis discovered that these guardrails were applied only to an initial request. Because the prompt injections instructed Copilot to repeat each request, the second one successfully induced the LLM to exfiltrate the private data. Subsequent indirect prompts (also in the disguised text file) seeking additional information stored in chat history were also repeated, allowing for multiple stages that, as noted earlier, continued even when the target closed the chat window. “Microsoft improperly designed” the guardrails, Taler said. “They didn’t conduct the threat modeling to understand how someone can exploit that [lapse] for exfiltrating data.”
+
+Varonis disclosed the attack in a post on Wednesday, which company researchers have named Reprompt. The security firm privately reported its findings to Microsoft, and as of Tuesday, the company has introduced changes that prevent it from working. The exploit worked only against Copilot Personal. Microsoft 365 Copilot wasn’t affected.  
+
+To read the complete article see: [Ars Technica](https://arstechnica.com/security/2026/01/a-single-click-mounted-a-covert-multistage-attack-against-copilot/) 
+
+*
