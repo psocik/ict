@@ -1,0 +1,16 @@
+---
+title: CodeBuild Flaw Put AWS Console Supply Chain At Risk
+date: 2026-01-15
+categories: [VULNS]
+tags: [AWS,CODEBUILD,SUPPLY CHAIN ATTACK,CYBERSECURITY]
+---
+
+A critical misconfiguration in AWS CodeBuild has allowed attackers to seize control of core AWS GitHub repositories, including the JavaScript SDK that underpins the AWS Console. The issue, dubbed CodeBreach by Wiz Research, exposed a weakness in the continuous integration pipelines used by AWS-managed open-source projects. By exploiting the flaw, an unauthenticated attacker could have injected malicious code into trusted repositories, creating a pathway to compromise the AWS Console and potentially every AWS account that relies on it.
+
+The vulnerability stemmed from how CodeBuild handled pull request triggers. A minor error in a security filter, missing just two characters, allowed untrusted pull requests to run privileged builds. From there, attackers could access GitHub credentials stored in build memory and escalate their access to full repository control. The exposed repositories relied on an ACTOR_ID filter to restrict which GitHub users could trigger builds. Wiz found that the filter was implemented as an unanchored regular expression, which meant that GitHub user IDs containing an approved ID as a substring could bypass the restriction. Because GitHub assigns numeric user IDs sequentially, Wiz researchers were able to predict when new IDs would "eclipse" trusted maintainer IDs. Wiz successfully demonstrated a takeover of the aws/aws-sdk-js-v3 repository, gaining admin-level access through stolen credentials. The same weakness existed in at least three other AWS repositories, including one linked to a personal AWS employee account.
+
+Wiz said the most sensitive target was the AWS SDK for JavaScript, a widely used library that powers both customer applications and the AWS Console itself. The firm estimates that 66% of cloud environments include the SDK, amplifying the potential impact of a supply chain attack. Wiz disclosed the findings on August 25, and AWS addressed the issue within 48 hours. The company anchored the affected regex filters, revoked exposed credentials, and added protections to prevent memory-based credential theft. AWS also introduced a new Pull Request Comment Approval build gate to block untrusted builds by default. In a statement, the company said, "AWS determined there was no impact on the confidentiality or integrity of any customer environment," adding that no evidence of malicious exploitation was found.
+
+Wiz recommended CodeBuild users take several defensive steps, including blocking untrusted pull requests from triggering privileged builds, using fine-grained GitHub tokens with minimal permissions, and anchoring webhook filter regex patterns. The research highlights a growing trend of CI/CD systems being targeted for supply chain attacks, following incidents such as Nx S1ngularity and the Amazon Q VS Code extension compromise.
+
+To read the complete article see: [Infosecurity Magazine](https://www.infosecurity-magazine.com/news/codebuild-flaw-aws-console-risk/) 
