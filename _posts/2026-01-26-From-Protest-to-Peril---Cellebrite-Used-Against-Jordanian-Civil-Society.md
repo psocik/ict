@@ -1,0 +1,20 @@
+---
+title: From Protest to Peril - Cellebrite Used Against Jordanian Civil Society
+date: 2026-01-26
+categories: [RESEARCH]
+tags: [CELLEBRITE,JORDAN,CIVIL SOCIETY,HUMAN RIGHTS]
+---
+
+Cellebrite’s products have been used by the Jordanian authorities to extract data from the phones of activists and civil society members without their consent. During our forensic investigation of devices that were seized by authorities and returned to their owners, we uncovered iOS and Android Indicators of Compromise (IoCs) that we attribute with high confidence to Cellebrite’s forensic extraction products.
+
+Court records shared with the Citizen Lab indicate use of Cellebrite products in criminal prosecutions against activists and members of Jordanian civil society in a manner that does not comply with human rights treaties that Jordan has ratified. We present seven individual cases in this report. The Citizen Lab is aware of dozens of other cases in the country involving civil society.
+
+Forensic records obtained in previous testing rounds suggest authorities have been using Cellebrite since at least 2020. We forensically analyzed four devices belonging to Jordanian activists and human rights defenders seized by Jordanian authorities during detentions, arrests, and interrogations (and later returned). We also obtained three court records originating from criminal proceedings against activists and journalists under the 2023 Cybercrime Law. Each record includes a technical report prepared by Jordan’s Criminal Investigations Department that contains a summary of the forensic extraction conducted on the seized devices.
+
+The cases analyzed in this report occurred between late 2023 and mid-2025 in the context of protests in support of Palestinians in Gaza. In total, we present seven different cases which lead us to conclude with high confidence that the seized devices were subjected to mobile forensic extraction using Cellebrite’s products.
+
+Over the past decade, civic space in Jordan has radically shrunk as authorities have deployed a growing range of legal and extralegal repressive measures against free expression. As of 2024, Freedom House ranked Jordan’s internet freedom as “partly free” and its state of freedom generally as “not free.” Successive Cybercrime Laws in 2015 and 2023 have been cornerstones of this repressive project. In mid-2023, the government repealed and replaced the Cybercrime Law, expanding its scope and punishments. This new law drew widespread criticism for its broad and vague provisions and harsh fines. For example, Article 15 of Jordan’s 2023 Cybercrime Law criminalizes the sharing of “fake news” concerning national security and the public order, or content that “defames, slanders, or shows contempt for any individual.” Article 17 of the Cybercrime Law targets the sharing of content that “incites racism, sedition, hatred, violence, or insults religions.” Both articles have been widely used to prosecute political activists and dissidents in the country.
+
+The 2023 Cybercrime law was introduced amidst rising political discontent over domestic and international issues. Since October 2023, Jordanians have engaged in near daily protests in support of Palestinians in Gaza, with demonstrators frequently facing crackdowns and mass arrests. Indeed, the basis for many of the arrests was the 2023 law. In a post on X dated March 12, 2025, the Jordanian Minister of Interior wrote the following in reference to Article 17: “The most common cases handled daily [by the Cybercrime Unit] involve hate speech and inciting division and strife on social media. [In 2024], 244 cases of this nature were referred to the Public Prosecution, while 50 cases have been referred this year [2025]. According to the Cybercrime Law, penalties can reach up to three years in prison, a fine of 20,000 dinars [~28,200 USD], or both.”
+
+To read the complete article see: [Citizen Lab](https://citizenlab.ca/research/from-protest-to-peril-cellebrite-used-against-jordanian-civil-society/) 
