@@ -1,0 +1,14 @@
+---
+title: Critical sandbox escape flaw found in popular vm2 NodeJS library
+date: 2026-01-27
+categories: [SECURITY]
+tags: [CVE-2026-22709,VM2,NODE.JS,VULNERABILITY]
+---
+
+A critical-severity vulnerability in the vm2 Node.js sandbox library, tracked as CVE-2026-22709, allows escaping the sandbox and executing arbitrary code on the underlying host system. The open-source vm2 library creates a secure context to allow users to execute untrusted JavaScript code that does not have access to the filesystem. vm2 has historically been seen in SaaS platforms that support user script execution, online code runners, chatbots, and open-source projects, being used in more than 200,000 projects on GitHub. The project was discontinued in 2023, though, due to repeated sandbox-escape vulnerabilities, and considered unsafe for running untrusted code. Last October, maintainer Patrik Šimek decided to resurrect the vm2 project and release version 3.10.0 that addressed all vulnerabilities known at the time. The library continues to be very popular on the npm platform, constantly reaching around one million downloads every week for the past year.
+
+The latest vulnerability arises from vm2’s failure to properly sandbox ‘Promises’, the component that handles asynchronous operations to make sure code execution is restricted to the context of the isolated environment. While vm2 sanitizes callbacks attached to its own internal Promise implementation, async functions return a global Promise whose .then() and .catch() callbacks are not properly sanitized. "In vm2 for version 3.10.0, Promise.prototype.then Promise.prototype.catch callback sanitization can be bypassed," the project maintainer says, adding that "this allows attackers to escape the sandbox and run arbitrary code." The developer also shared code demonstrating how CVE-2026-22709 could be triggered in the vm2 sandbox to escape it and execute a command on the host system.
+
+Given that CVE-2026-22709 is trivial to exploit in vulnerable vm2 versions, users are recommended to upgrade to the latest release as soon as possible. Previously reported critical sandbox escape flaws in vm2 include CVE-2022-36067, disclosed by researchers at Oxeye. Exploiting the bug allowed escaping the isolated environment and running commands on the host system. In April 2023, a similar flaw, tracked as CVE-2023-29017, was discovered, and an exploit was published. Later that same month, researcher SeungHyun Lee released an exploit for CVE-2023-30547, yet another critical sandbox escape impacting vm2. Šimek told BleepingComputer that "all disclosed vulnerabilities are properly fixed" in vm2 version 3.10.3, currently the most recent release.
+
+To read the complete article see: [Bleeping Computer](https://www.bleepingcomputer.com/news/security/critical-sandbox-escape-flaw-discovered-in-popular-vm2-nodejs-library/) 
