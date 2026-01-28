@@ -1,0 +1,17 @@
+---
+title: Why has Microsoft been routing example.com traffic to a company in Japan?
+date: 2026-01-27
+categories: [CYBERSECURITY]
+tags: [MICROSOFT,NETWORK,ANOMALY,SECURITY,EXAMPLE.COM]
+---
+
+Microsoft has suppressed an unexplained anomaly on its network that was routing traffic destined to example.com—a domain reserved for testing purposes—to a maker of electronics cables located in Japan. Under the RFC2606—an official standard maintained by the Internet Engineering Task Force—example.com isn’t obtainable by any party. Instead, it resolves to IP addresses assigned to the Internet Assigned Names Authority. The designation is intended to prevent third parties from being bombarded with traffic when developers, penetration testers, and others need a domain for testing or discussing technical issues.
+
+Output from the terminal command cURL shows that devices inside Azure and other Microsoft networks have been routing some traffic to subdomains of sei.co.jp, a domain belonging to Sumitomo Electric. The exception is the JSON-based response, which on Friday included: {"email":"email@example.com","services":[],"protocols":[{"protocol":"imap","hostname":"imapgms.jnet.sei.co.jp","port":993,"encryption":"ssl","username":"email@example.com","validated":false},{"protocol":"smtp","hostname":"smtpgms.jnet.sei.co.jp","port":465,"encryption":"ssl","username":"email@example.com","validated":false}]}. In both cases, the results show that Microsoft was routing email traffic to two sei.co.jp subdomains: imapgms.jnet.sei.co.jp and smtpgms.jnet.sei.co.jp. The behavior was the result of Microsoft’s autodiscover service.
+
+“I’m admittedly not an expert in Microsoft’s internal workings, but this appears to be a simple misconfiguration,” Michael Taggart, a senior cybersecurity researcher at UCLA Health, said. “The result is that anyone who tries to set up an Outlook account on an example.com domain might accidentally send test credentials to those sei.co.jp subdomains.” By Monday morning, the improper routing was no longer occurring. A Microsoft representative later confirmed that Microsoft has “updated the service to no longer provide suggested server information for example.com.” The behavior only affected people configuring email accounts through the Outlook autoconfiguration feature. Tinyapps.org, which noted the odd routing behavior earlier this month, said it lasted five years.
+
+The new JSON response suggested that, as of Monday morning, Microsoft hadn’t fixed the endpoint routing traffic to the Sumitomo Electric servers. Instead, the command now simply sits and hangs for 10 or 20 seconds and then terminates with a not found error, denoted by ENOTFOUND. “It looks like they may have outright removed the endpoint that validates the email, because I’m seeing ‘not found’ errors,” said Dan Tentler, founder of Phobos Group. While there doesn’t appear to be anything nefarious about the improper routing, and as long as people inside Microsoft’s network weren’t sending live credentials in tests, there was no danger posed, there’s still reason for concern. The routing misconfiguration for example.com raises the question: What other possibly more severe errors lurk on the network?
+
+To read the complete article see:
+[Ars Technica](https://arstechnica.com/information-technology/2026/01/odd-anomaly-caused-microsofts-network-to-mishandle-example-com-traffic/).
