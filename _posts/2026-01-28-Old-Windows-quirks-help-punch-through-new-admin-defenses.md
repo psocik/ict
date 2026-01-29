@@ -1,0 +1,16 @@
+---
+title: Old Windows quirks help punch through new admin defenses
+date: 2026-01-28
+categories: [SECURITY]
+tags: [WINDOWS,ADMIN,VULNERABILITIES,MICROSOFT,SECURITY RESEARCH]
+---
+
+Microsoft patched a bevy of bugs that allowed bypasses of Windows Administrator Protection before the feature was made available earlier this month. James Forshaw, security researcher at Google's Project Zero, reported nine vulnerabilities in December that could allow attackers to silently grant themselves admin privileges on machines with the new Windows feature enabled. Most of these related to previously known User Account Control (UAC) issues, Forshaw said, but, if exploited, could have subverted the whole point of Windows Administrator Protection. The idea behind Administrator Protection is to ensure that users only operate using the least privileges necessary.
+
+Forshaw said the most notable of the nine bugs he reported was a Logon Sessions flaw that relied upon five different Windows behaviors. He added that he likely only found it because he was previously familiar with the OS's 'weird behavior when creating the DOS device object directory.' The issue focuses on how Windows handles these directories for specific user sessions. Because the kernel creates a DOS device object directory on demand, rather than at login, it cannot check whether the user is an admin during the creation process. Unlike UAC, Administrator Protection uses a hidden shadow admin account whose token handle can be returned by the system when calling the NtQueryInformationToken API function.
+
+The researcher demonstrated that attackers can modify the token's owner security identifier to match their own user ID. Impersonating this token means that an attacker can force the kernel to create a new directory and assign ownership to them, effectively being able to control it. Forshaw wrote: "As access checking is disabled, the creation will still succeed; however, once it's created, the kernel will do an access check for the directory itself and will fail due to the identification token being impersonated." Forshaw said he discovered this behavior in UAC some time ago, but never reported it as he could not find a scenario where a limited user could run code before any admin processes were created.
+
+The introduction of Administrator Protection changed things because, unlike UAC, it creates a new unique logon session each time the user requests to elevate their privileges to admin level. Microsoft fixed this by preventing DOS device object directory creation when impersonating a shadow admin token at the identification level. Forshaw said: "This issue is interesting, not just because it allowed me to bypass the protection but also because it was a potential UAC bypass that I had known about for many years, but only became practically exploitable because of the introduction of this feature."
+
+To read the complete article see: [The Register](https://www.theregister.com/2026/01/28/google_windows_admin_exploit/) 
