@@ -1,0 +1,18 @@
+---
+title: Russian Cybercrime Platform RAMP Forum Seized by FBI
+date: 2026-01-28
+categories: [CYBERCRIME]
+tags: [FBI,RAMP,CYBERCRIME,SEIZURE]
+---
+
+In a huge blow to the global cybercrime underground, US federal authorities have seized the clearnet and dark web domains of RAMP (Ramp4u.io), a well-known Russian-language cybercrime forum used by ransomware affiliates, malware developers, and initial access brokers. The seizure banners, now visible on both domains, confirm the takedown was carried out by the Federal Bureau of Investigation (FBI) in coordination with the US Attorney’s Office for the Southern District of Florida and the Department of Justice’s Computer Crime and Intellectual Property Section (CCIPS). The domains now redirect to seizure notices with FBI and DOJ seals, and the nameservers have been updated to ns1.fbi.seized.gov and ns2.fbi.seized.gov as of January 28, 2026, confirming full control by US authorities.
+
+The seizure notice states: “THIS SITE HAS BEEN SEIZED. The Federal Bureau of Investigation has seized RAMP. This action has been taken in coordination with the United States Attorney’s Office for the Southern District of Florida and the Computer Crime and Intellectual Property Section of the Department of Justice. Please contact IC3.gov if you have information to report about cyber-criminal activity on RAMP.”
+
+On the underground forum XSS, a user known as Stallman, previously believed to be one of the RAMP operators or insiders, posted a statement in Russian language acknowledging that law enforcement had gained control of RAMP. He expressed regret over the loss of what he described as “the most free forum in the world,” and confirmed that RAMP has been fully compromised and is no longer under his or the team’s control. However, there is no official confirmation yet regarding any arrests, and it remains unclear if any of RAMP’s core operators or high-profile users have been detained. The FBI’s IC3 portal is being used for further tips and leads.
+
+In mid-2021, a new forum using the RAMP name resurfaced, this time not as a drug marketplace but as a dedicated cybercrime platform. It quickly positioned itself as a ransomware-friendly marketplace, openly marketing itself as “The Only Place Ransomware Allowed.” While many cybercrime forums, such as Exploit and XSS, banned ransomware discussions due to law enforcement pressure, RAMP embraced it, attracting ransomware operators, affiliates, and access brokers looking to sell corporate access or recruit partners. RAMP’s offerings included: Leaked data auctions and extortion deals, Malware and botnet rentals, Custom exploits and crypters, Insider recruitment and access-buying, Ransomware-as-a-Service (RaaS) affiliate programs, Underground advertising for Telegram and Jabber contacts, Initial Access Broker (IAB) listings for compromised corporate networks. Because of its ransomware openness and less restrictive moderation, RAMP became a go-to forum for both high-level and mid-tier cybercriminals after the takedowns of REvil, DarkSide, and other groups in late 2021 and early 2022. The seizure of RAMP follows the earlier takedown of XSS.IS, another long-running Russian-speaking cybercrime forum.
+
+At this time, US authorities have not released an official statement on the RAMP takedown, but with domains seized and confirmations from inside the community, the shutdown is confirmed.
+
+To read the complete article see: [Hackread Article](https://hackread.com/russian-cybercrime-ramp-forum-seized-fbi/) 
