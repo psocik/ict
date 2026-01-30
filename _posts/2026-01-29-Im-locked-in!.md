@@ -1,0 +1,14 @@
+---
+title: I'm locked in!
+date: 2026-01-29
+categories: [SECURITY]
+tags: [CISCO TALOS,CYBERSECURITY,MALWARE,PHISHING,RANSOMWARE]
+---
+
+**Cisco Talos Incident Response’s report for Q4 2025 is now available.** We observed that exploitation of public-facing applications remained the top method of initial access, though it declined from 62% to about 40% of engagements. Phishing was the second-most common tactic, notably targeting Native American tribal organizations, and credential harvesting often led to further internal attacks. Ransomware incidents continued to fall, making up only 13% of cases, with Qilin ransomware still dominant. Attackers are quickly leveraging both newly disclosed and older vulnerabilities in internet-facing applications, underscoring the need for rapid patching and minimizing exposure. The increase in targeted phishing and MFA abuse demonstrates that adversaries are adapting their techniques to bypass common security controls. Public administration and under-resourced sectors remain highly attractive targets due to legacy systems and sensitive data.
+
+Security teams should focus on patching systems promptly, making sure MFA is well-configured and monitored, and keeping detailed logs to spot and investigate suspicious activity. Acting quickly and working closely with incident response experts can help limit the damage if an attack occurs.
+
+Furthermore, **Poland’s energy grid was targeted by never-before-seen wiper malware**. After studying the tactics, techniques, and procedures (TTPs) used in the attack, ESET researchers said the wiper was likely the work of a Russian government hacker group, Sandworm. Additionally, the North Korean hacker group Konni (aka Opal Sleet, TA406), active since at least 2014, is using AI-generated PowerShell malware to target developers and engineers in the blockchain sector. Two high-severity n8n flaws were also disclosed, allowing authenticated remote code execution; successful exploitation of the flaws could permit an attacker to hijack an entire n8n instance. In other news, the US has charged 31 suspects in a nationwide ATM jackpotting scam, with the group allegedly using a computer malware called Ploutus, active since 2015, to steal funds.
+
+Moreover, Cisco Talos uncovered a new wave of attacks by UAT-8099 targeting IIS servers across Asia, with a special focus on Thailand and Vietnam. Analysis confirms significant operational overlaps between this activity and the WEBJACK campaign. Talos telemetry also identified prevalent malware files from the past week, including Win.Worm.Coinminer::1201 (SHA256: 9f1f11a708d393e0a4109ae189bc64f1f3e312653dcf317a2bd406f18ffcc507) and W32.Injector:Gen.21ie.1201 (SHA256: 96fa6a7714670823c83099ea01d24d6d3ae8fef027f01a4ddac14f123b1c9974).
