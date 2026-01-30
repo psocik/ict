@@ -1,0 +1,18 @@
+---
+title: Clawdbot’s rename to Moltbot sparks impersonation campaign
+date: 2026-01-29
+categories: [SECURITY]
+tags: [MOLTBOT,CLAWDBOT,IMPERSONATION,MALWAREBYTES,AI,SUPPLY-CHAIN ATTACK]
+---
+
+After the viral AI assistant Clawdbot was forced to rename to Moltbot due to a trademark dispute, opportunists moved quickly. Within days, typosquat domains and a cloned GitHub repository appeared—impersonating the project’s creator and positioning infrastructure for a potential supply-chain attack. The code is clean. The infrastructure is not. The absence of malware is the strategy. Nothing here suggests an opportunistic malware campaign; instead, the setup points to early preparation for a supply-chain attack.
+
+In early 2026, Peter Steinberger’s Clawdbot became one of the fastest-growing open source projects on GitHub. Anthropic later objected to the name, and Steinberger complied, rebranding the project to Moltbot. During the rename, both the GitHub organization and X (formerly Twitter) handle were briefly released before being reclaimed. Attackers monitoring the transition grabbed them within seconds. As Peter Steinberger noted, "Had to rename our accounts for trademark stuff and messed up the GitHub rename and the X rename got snatched by crypto shills." This brief gap led to the emergence of impersonation infrastructure, including domains like moltbot[.]you, clawbot[.]ai, and clawdbot[.]you, as well as a cloned repository at github[.]com/gstarwd/clawbot.
+
+Evidence of impersonation includes false attribution: the site’s schema.org metadata falsely claims authorship by Peter Steinberger, linking directly to his real GitHub and X profiles. This is explicit identity misrepresentation. Additionally, “View on GitHub” links send users to gstarwd/clawbot, not the official moltbot/moltbot repository. The site prominently advertises tens of thousands of stars that belong to the real project, stealing credibility. Mixing legitimate and fraudulent links is also observed, where some links point to real assets while others redirect to impersonation infrastructure, selectively defeating casual verification. The threat model suggests that at a later point, a routine update will be pulled through npm update or git pull, and a malicious payload will be delivered into an installation the user already trusts. An attacker can then harvest Anthropic API keys, OpenAI API keys, WhatsApp session credentials, Telegram bot tokens, Discord OAuth tokens, Slack credentials, Signal identity keys, full conversation histories, and command execution access on the compromised machine.
+
+Clearly malicious elements include false attribution to a real individual, misrepresentation of popularity metrics, and deliberate redirection to an unauthorized repository. Deceptive but not yet malware elements encompass typosquat domains, SEO manipulation, and cloned repositories with clean code. Clean code today lowers suspicion tomorrow. Impersonation infrastructure like this is designed to look legitimate long before anything malicious appears. That’s why basic source verification still matters, especially when popular projects rename or move quickly. 
+
+Advice for users includes verifying GitHub organization ownership, bookmarking official repositories directly, and treating renamed projects as higher risk during transitions. For maintainers, pre-registering likely typosquat domains before public renames, coordinating renames carefully, and monitoring for cloned repositories and impersonation sites are crucial.
+
+To read the complete article see: [link](https://www.malwarebytes.com/blog/threat-intel/2026/01/clawdbots-rename-to-moltbot-sparks-impersonation-campaign)
