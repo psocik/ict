@@ -1,0 +1,20 @@
+---
+title: The Double-Edged Sword of Non-Human Identities
+date: 2026-02-04
+categories: [SECURITY]
+tags: [NON-HUMAN IDENTITIES,SECURITY,CREDENTIALS,SOFTWARE DEVELOPMENT]
+---
+
+## The Double-Edged Sword of Non-Human Identities
+
+In a sweeping analysis conducted in late 2025, Flare researchers uncovered more than 10,000 Docker Hub container images leaking secrets (including production API keys, cloud tokens, CI/CD credentials, and even AI model access tokens) all pushed into public repositories, often unintentionally by developers. Non-human identities (NHIs), such as tokens, API keys, service accounts, and workload identities, are the machine-to-machine credentials that power modern software development and cloud infrastructure. Unlike human users who authenticate with passwords and MFA, these identities authenticate applications, build pipelines, and automated services continuously, often with broad privileges and indefinite lifespans. These exposures are not edge cases, but are structural failures of how modern software is built and operated.  
+
+Recent years have seen real-world nightmares involving the exposure of non-human identities. One of the most prominent cases was the 2024 Snowflake incident. It was not driven by a software exploit, but by the silent abuse of long-lived credentials that had been leaking into the criminal ecosystem for years. The threat actor cluster UNC5537 authenticated into approximately 165 Snowflake customer environments using exposed credentials harvested from historical infostealer malware dumps and cybercrime marketplaces. These credentials often lacked multi-factor authentication and were designed to persist indefinitely. The data accessed included highly sensitive corporate and customer information belonging to organizations such as AT&T, Ticketmaster, and Santander.  
+
+Additionally, in late 2025, Home Depot’s internal systems remained accessible for over a year due to a single leaked GitHub access token belonging to an employee, which had been inadvertently published in early 2024. This token granted broad rights, including read and write access to hundreds of private source code repositories, as well as entry into connected cloud infrastructure. Despite multiple attempts by an external security researcher to alert Home Depot, the token remained active and publicly accessible for months. The prolonged exposure underscores a systemic gap in credential governance and automated secret detection: long-lived machine identities without rotation, expiration, or proactive monitoring allowed a static access token to function as a persistent authentication vector across critical internal systems.  
+
+Non-human identities are deeply embedded in the modern software development lifecycle and production infrastructure, powering everything from code builds to application runtimes. These processes rely on tokens, API keys, and service accounts that operate continuously, often with broad and persistent privileges. Unlike human users, these identities don’t change jobs, don’t get phished, and don’t forget passwords, which is exactly what makes them dangerous when exposed. If a non-human identity leaks into a repository, container image, or log file, it can grant attackers silent, durable, and legitimate access deep into an organization’s software development lifecycle (SDLC), often bypassing detection entirely because everything looks like normal automation.  
+
+The key takeaway is simple: Attackers are already authenticating with leaked secrets found in public container registries. This isn’t a theoretical risk - it’s happening now. For defenders, the imperative is clear: Treat container images like code AND credentials. Integrate automated secret scanning at every stage of the SDLC. Adopt short-lived, ephemeral credentials backed by identity federation rather than long-lived tokens baked into images. Additionally, monitor for exposed keys in public registries and revoke them proactively – don’t wait for an attacker to misuse them.  
+
+[Read full article](https://www.bleepingcomputer.com/news/security/the-double-edged-sword-of-non-human-identities/)
