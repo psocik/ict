@@ -17,4 +17,4 @@ Most of the 13 ‘unforgivable vulnerabilities’ mentioned in the original MITR
 
 To read the complete article see: [Read full article](https://www.ncsc.gov.uk/blog-post/eradicating-trivial-vulnerabilities-at-scale)
 
-RISE-IRELAND is April 14-15, get on the waitlist at [RISE-IRELAND](https://teamcymru.cventevents.com/event/rise-ireland/). Call for papers is still open, and it’s a great way to get in if your offer is accepted: [Submit Abstract](https:www.cvent.com/c/abstracts/9cbe751e-d180-42bb-a6f3-75a0dc9ecbd9).
+RISE-IRELAND is April 14-15, get on the waitlist at [RISE-IRELAND](https://teamcymru.cventevents.com/event/rise-ireland/). Call for papers is still open, and it’s a great way to get in if your offer is accepted: [Submit Abstract](https://www.cvent.com/c/abstracts/9cbe751e-d180-42bb-a6f3-75a0dc9ecbd9).
