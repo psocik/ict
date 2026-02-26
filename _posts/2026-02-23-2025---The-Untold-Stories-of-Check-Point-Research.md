@@ -2,7 +2,7 @@
 title: 2025 - The Untold Stories of Check Point Research
 date: 2026-02-23
 categories: [CYBERSECURITY]
-tags: [CHECK POINT RESEARCH,CYBER THREATS,2025,SECURITY]
+tags: [CHECK POINT RESEARCH,CYBER THREATS,SECURITY]
 ---
 
 ## 2025 - The Untold Stories of Check Point Research
