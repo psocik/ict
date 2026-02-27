@@ -25,7 +25,3 @@ When harassment is viewed through a behavioral lens, investigators gain practica
 - **More proportional outcomes**: Support differentiated charging and sentencing recommendations based on role and behavior, not just volume.
 
 To read the complete article see: [Read full article](https://riseinfosec.org/behavioural-science-of-online-harassment-explained/)
-
-See the related slides from last week's presentation at the RISE-USA conference here: [Slides](https://riseinfosec.org/wp-content/uploads/2026/02/F-004-How-Harassment-Shaped-the-Internet_-NVEs-Nudifiers-and-Networked-Aggression-TLP_CLEAR.pdf)
-
-**RISE-IRELAND** is April 14-15, get on the waitlist at [Waitlist](https://teamcymru.cventevents.com/event/rise-ireland/). Call for papers is still open, and a great way to get in if your offer is accepted: [Call for Papers](https:www.cvent.com/c/abstracts/9cbe751e-d180-42bb-a6f3-75a0dc9ecbd9).
