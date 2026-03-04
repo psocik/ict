@@ -1,0 +1,16 @@
+---
+title: Exorcising Demons - Fake Tech Support Delivers Havoc Command & Control
+date: 2026-03-02
+categories: [CYBERSECURITY]
+tags: [MALWARE,TECH SUPPORT,SCAMS,CYBERSECURITY]
+---
+
+## Exorcising Demons - Fake Tech Support Delivers Havoc Command & Control
+
+Fake tech support scams are nothing new, but the payloads they deliver are getting a serious upgrade. What once ended with a **$300 gift card purchase** now ends with a modified **Havoc C2 framework** burrowed into your environment, leveraging indirect syscalls to dodge EDR and registry-based fallback C2s that stock Havoc doesn't even ship with. In February 2026, Huntress identified a cluster of intrusions across five partner organizations that followed this exact pattern: email spam as bait, a phone call from “IT support” as the hook, and a layered malware delivery chain as the punchline. 🚨
+
+In one organization, the adversary moved from initial access to nine additional endpoints over the course of eleven hours, deploying a mix of custom **Havoc Demon payloads** and legitimate RMM tools for persistence, with the speed of lateral movement strongly suggesting the end goal was data exfiltration, ransomware, or both. However, the overlap between that previous research and the activity we observed suggests a more insidious link—one that persists despite Black Basta's disruption. Adversaries employed identical tactics: storing command-and-control parameters in the registry, leveraging extensive DLL sideloading to maintain persistence, and deploying similar techniques to plant malware on target systems. Black Basta is rumored to have gone dormant in late 2025 following internal chat leaks and coordinated law enforcement pressure from German and Ukrainian agencies, yet their signature playbook appears to remain active in the wild. This points to two concerning scenarios: former Black Basta affiliates have migrated to other ransomware operations and brought their tradecraft with them, or rival threat actors are co-opting their playbooks for social engineering and network intrusion. 🔍
+
+The attack began with a spam campaign, where the adversary targeted organizations with mass emails. Once the users were overwhelmed by the spam, adversaries, posing as fake IT support, contacted them. Users were then persuaded to approve a **QuickAssist session** or to install remote access applications like **AnyDesk**, granting the attacker hands-on access to the endpoint. With access gained, the adversary utilized the remote management tool to open a web browser and navigate to a fraudulent Microsoft panel hosted on **Amazon AWS**, all while the user observed. This mechanism serves two purposes: it allows the threat actor (TA) to harvest credentials, which, when combined with the required email address, provides access to the control panel; concurrently, it adds a layer of authenticity to the interaction, convincing the user the process is genuine. 💻🔒
+
+[Read full article](https://www.huntress.com/blog/fake-tech-support-havoc-command-control)
