@@ -1,0 +1,19 @@
+---
+title: Flaw in UK's Corporate Registry Exposes Directors' Data
+date: 2026-03-16
+categories: [SECURITY]
+tags: [UK,CORPORATE,SECURITY,DATA BREACH]
+---
+
+## Flaw in UK's Corporate Registry Exposes Directors' Data 🚨
+
+Companies House was forced to pull down its record-filing platform for the entire weekend to rectify a **security issue** that exposed the personal details of company directors and other data to any logged-in users. The government agency, which manages the UK's register of all businesses and their directors, temporarily shut down its WebFiling service on **March 13** at **13:30 UTC** following reports that hidden company details could be seen and modified. In a statement, it confirmed that techies resolved the flaw and WebFiling was online again from **09:00** today.
+
+> "Our investigation has established that specific data from individual companies not normally published on the Companies House register may have been visible to other logged-in WebFiling users," Companies House CEO **Andy King** said on Monday. **"This includes dates of birth, residential addresses, and company email addresses. It may also have been possible for unauthorized filings – such as accounts or changes of director – to have been made on another company's record."** King stated that passwords were not among the types of data accessible by other users, nor were documents related to identity verification, such as passports. **"No existing filed documents, such as accounts or confirmation statements could have been altered."** King added, **"We believe that this issue could not have been used to extract data in large volumes or to access records systematically. Any access would have been limited to individual company records, viewed one at a time by a registered WebFiling user."**
+
+An internal investigation revealed that changes made to the WebFiling platform in **October 2025** introduced the unexpected behavior, but attention was first drawn to it on **March 13** by tax professional **Dan Neidle**. The founder of Tax Policy Associates published a video on social media depicting how the flaw could be abused to access other companies' data. Neidle said he was made aware of the flaw by **John Hewitt**, director of operations at Ghost Mail, and he then informed Companies House immediately. Now fixed, a logged-in company director could exploit the flaw by starting from their own dashboard and then trying to log into another company's account. Once they reach the **2FA** block, which they would not be able to pass, all that was required was to click the browser's back button a few times. Typically, the user would be taken back to their own dashboard, but the bug instead returned them to the company they had tried to log into but couldn't.
+
+Companies House said it reported the incident to the **Information Commissioner's Office** and **National Cyber Security Centre**, and continues to investigate whether the flaw was abused for real since October. King stated, **"If we find evidence that anyone has used this issue to access or change another company's details without authorization, we will take firm action."** He also said, **"I recognize that this incident will have caused concern and inconvenience to many of the companies and individuals who rely on our services. I am sorry for that."** Companies House takes its responsibility to protect the data entrusted to us extremely seriously. We have taken swift action to secure and restore our service, and are committed to doing everything in our power to support those affected and to make sure that our services continue to merit the trust placed in them.
+
+To read the complete article see:
+[Read full article](https://www.theregister.com/2026/03/16/companies_house_breach/)
