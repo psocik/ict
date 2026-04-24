@@ -1,0 +1,12 @@
+---
+title: 2026-03-19 Daily Vulns
+date: 2026-03-19
+categories: [VULNERABILITIES]
+tags: []
+---
+
+# NEW:
+
+| CVE            | vendor-product                  | description                                                                                                                                                                                                                                                                                                                                                                            | metric                | Referenceurl                                                                  | title                                                      | GithubURL                |                                                                                                                                   |
+| -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| CVE-2025-12518 | Bee Content Design - Befree SDK | beefree.io SDK is vulnerable to Stored XSS in Social Media icon URL parameter in email builder functionality. Malicious attacker can inject arbitrary HTML and JS into template, which will be rendered/executed when visiting preview page. However due to beefree's Content Security Policy not all payloads will execute successfully. This issue has been fixed in version 3.47.0. | CVSS4.0: 5.3 - MEDIUM | [0](https://cert.pl/en/posts/2026/03/CVE-2025-12518) [1](https://beefree.io/) | Exploitation: noneAutomatable: noTechnical Impact: partial | Stored XSS in beefree.io | [github](https://github.com/cisagov/vulnrichment/raw/7bac24bfc6802cca3447c1d271da41074f7f711e/2025%2F12xxx%2FCVE-2025-12518.json) |
