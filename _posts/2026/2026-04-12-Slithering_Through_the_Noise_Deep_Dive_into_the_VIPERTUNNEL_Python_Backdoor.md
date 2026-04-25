@@ -1,0 +1,18 @@
+---
+title: Slithering Through the Noise - Deep Dive into the VIPERTUNNEL Python Backdoor
+date: 2026-04-12
+categories: [CYBERSECURITY]
+tags: [MALWARE,PYTHON,BACKDOOR,CYBERSECURITY]
+---
+
+## Slithering Through the Noise - Deep Dive into the VIPERTUNNEL Python Backdoor
+
+During a recent DragonForce ransomware engagement, we identified several artifacts indicative of anomalous behavior inconsistent with typical campaign activity. A scheduled task named **523135538** was identified, configured to execute `C:\ProgramData\cp49s\pythonw.exe` without command-line arguments. Within the directory, we found `C:\ProgramData\cp49s\Lib\sitecustomize.py`. In Python, this module auto-imports at startup. Placing malicious code here ensures it runs whenever `pythonw.exe` starts, without command-line input. Using `Py_GetArgcArgv`, the script checks `argc`. An `argc` of 1 (just `pythonw.exe`) means no command-line input. Under this, it locates **b5yogiiy3c.dll** in `C:\ProgramData\cp49s` and runs it via `runpy`.
+
+The file **b5yogiiy3c.dll** is a Python script masquerading as a dynamic link library, with several layers of obfuscation. The contents of **b5yogiiy3c.dll** were heavily obfuscated with layered abstraction, obscuring its behavior. The cryptographic primitives—hash functions (**blake3**, **SHA256**, **hashlib**), symmetric ciphers (**AES**, **ChaCha20**), encoding tools (**base64**, **zlib**), and **sys**—highlight the script's purpose, with unused **os** likely due to code reuse. This setup suggests a loader decrypts and stages a secondary payload. It also uses `base64.b85decode`, indicating Base85 encoding, which has a higher density and can bypass systems focused on standard Base64 patterns. The payload is processed with `compile()`, using a synthetic filename (**<jK6xvQeYbpkDD>**) and exec mode, then executed immediately. This keeps the next-stage logic in memory, reducing detection risk.
+
+After removing three obfuscation layers, the payload was recovered. The script creates a **SOCKS5 proxy** with an outbound tunnel to a hardcoded **C2 server**. The proxy uses port **443** for outbound connections, blending with typical HTTPS traffic to evade detection. The payload includes three classes: **Wire**, **Relay**, and **Commander**. The **Commander** class inherits from **threading.thread**, serves as the main control thread, performs the initial C2 handshake, and spawns **Relay** instances as needed. The **Relay** class implements SOCKS5 proxy logic, mediating data between the C2 endpoint and local network once instantiated by **Commander**. The **Wire** class supports this by managing socket abstractions and encapsulating tunnel data.
+
+Clustering analysis found four variants of the final payload. Though they all establish a tunnel, differences in structure and implementation indicate iterative development. All samples used the same hardcoded credentials: **AnyUser / AnyPassword**. The estimated timeframes for each group are as follows: **Early Development** (December 2023), **Adopting of public Tooling** (September 2024), **Refinement & Debugging** (December 2024 - September 2025), **Modern Production Variant** (September 2025 - December 2025). The early development samples exhibit numerous coding inconsistencies and spelling errors, such as **deamon** instead of **daemon** and **__setatrr__** instead of **__setattr__**. Samples within this group were solely observed without any form of obfuscation. The second cluster has a minified payload, removing whitespace and flattening multi-line logic into single lines. The "Refinement & Debugging" group introduced the usage of hardcoded C2 addresses.
+
+[Read full article](https://labs.infoguard.ch/posts/slithering_through_the_noise/)
