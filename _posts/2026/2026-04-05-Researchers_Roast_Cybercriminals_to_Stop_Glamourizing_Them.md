@@ -1,0 +1,18 @@
+---
+title: Researchers Roast Cybercriminals to Stop Glamourizing Them
+date: 2026-04-05
+categories: [CYBERSECURITY]
+tags: [CYBERCRIME,THREAT INTELLIGENCE,DARK WEB,LAW ENFORCEMENT]
+---
+
+## Researchers Roast Cybercriminals to Stop Glamourizing Them
+
+Cybercrime crews have become almost mystical entities, with security vendors assigning them names like **Wizard Spider** and **Velvet Tempest**. Former CISA boss Jen Easterly and others have called on the industry to stop glamorizing these groups. Trellix VP of threat intel **John Fokker**, during an interview with *The Register* at the RSA Conference, expressed similar sentiments. Fokker stated, "Everybody's glorifying threat actors, and that's not helping our customers or organizations. These are just individuals, they just use computers, and they just want to steal your data and make money. They're not mythical. They don't have superpowers." His team at Trellix decided to take an "almost psyops" approach to covering the criminal underground, with Fokker explaining, "We don't want to glorify them, what's the opposite we can do? We're going to roast them."  
+
+And thus, the **Dark Web Roast** was born. It's a regular blog complete with memes, mockery, and a disclaimer: "While these incidents are genuinely amusing, they represent real criminal activities causing significant harm. This content is for threat intelligence and educational purposes only." One recent edition highlighted an exploit developer named **cortana9000** who found a Cisco remote code execution bug (CVE-2026-20045) under active exploitation by government-backed goons and asked on a forum, "so how much is this worth" before listing it for **$70,000**. According to the roast, "A fellow forum member, KlopInko, swooped in with the devastating one-liner: 'since it's known, it's a 1day exploit' - essentially telling cortana9000 that his $70K payday had already started depreciating the moment he opened his mouth."  
+
+Fokker points to the **LockBit** infrastructure seizure and dismantling led by the UK's National Crime Agency (NCA) as the beginning of a deliberate change in law enforcement's response toward cybercriminals. In that case, the cops trolled the notorious ransomware gang via its own website before ultimately unveiling LockBitSupp's true identity. Public mockery, as with LockBit, and infiltration like the FBI did with Hive's ransomware network, can fracture trust among cyberthieves. This fragmentation can help defenders dismantle criminal operations and keep people and data safe. Fokker elaborated, "In the criminal underground, it's more network-based and individual-based," adding that "This also creates dependencies," where groups in partnership with ransomware groups face issues like "exit scams, or the decryptor didn't work, and that causes cracks in the business model."  
+
+Trellix assisted international cops in the long-running **Operation Endgame**. During the November 2025 Rhadamanthys infostealer takedown, officials released a smug animated video designed to undermine trust within criminal organizations. The video shows an administrator skimming the most valuable secrets and cryptocurrency keys for personal gain, while passing only less lucrative data to customers. After the Europol press release came out, Trellix unleashed the snark in a Dark Web Roast. Fokker explained, "We basically said you're stupid if you work with him, because he's just getting rich, and we just make fun of him." He concluded, "We don't know if the impact was measurable, but still, we had an opportunity to run with that story and make a complete fool out of this admin. So that's something."  
+
+[Read full article](https://www.theregister.com/2026/04/05/trellix_john_fokker_roasting_crims/)
