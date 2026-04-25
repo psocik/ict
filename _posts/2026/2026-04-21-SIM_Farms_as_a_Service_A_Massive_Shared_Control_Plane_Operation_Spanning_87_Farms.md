@@ -1,0 +1,24 @@
+---
+title: SIM Farms as a Service A Massive Shared Control Plane Operation Spanning 87 Farms
+date: 2026-04-21
+categories: [RESEARCH]
+tags: [SIM FARMS,PROXY NETWORKS,INFRAWATCH,MOBILE INFRASTRUCTURE]
+---
+
+## SIM Farms as a Service: A Massive Shared Control Plane Operation Spanning 87 Farms
+
+In February 2026, Infrawatch investigated several self-proclaimed **"SIM Farm as a Service"** offerings, identifying the underlying physical infrastructure: racks of real phones and 4G/5G modems connected to carrier networks. Infrawatch assesses that a large portion of the mobile proxy ecosystem is enabled by a shared SIM Farm as a Service control plane called **ProxySmart**. SIM farms enable a range of illicit and abusive activity at an industrial scale and are supported by a broader downstream ecosystem of software, infrastructure, and commercial evasion services. 
+
+Technical analysis indicates operator capabilities consistent with large-scale evasion enablement, including automated IP rotation, remote device control, and network fingerprint spoofing. Mobile proxies are attractive to users because they typically sit behind carrier-grade NAT, meaning a single IP address may be shared by multiple clients at the same time. This makes IP-based blocking less effective and also enables rapid IP rotation, since addresses can often be changed simply by forcing a reconnection to the carrier network. 🚀
+
+Infrawatch identified **87 exposed instances** of the ProxySmart control panel across **17 countries**, linked to at least **24 commercial proxy providers** and **35 cellular providers**. The observed footprint includes at least **94 physical phone-farm locations** across North America, Europe, and South America, including a distributed presence across **19 U.S. states**. The observed country footprint includes the United States, Canada, the United Kingdom, Germany, Spain, Portugal, Ukraine, Latvia, France, Romania, Brazil, Ireland, the Netherlands, Australia, Italy, Poland, and Georgia. Within the United States, Infrawatch observed farms spanning **19 states**, ranging from California and Texas to Maine and Delaware. Identified locations are predominantly in major metropolitan areas with strong 4G/5G coverage. 
+
+Across ProxySmart-powered farms, operators advertise access to SIMs and carrier connectivity from a wide range of mobile networks, including: AT&T, Verizon, T-Mobile, Telcel, Rogers, EE, O2, Three, Vodafone, Orange, SFR, Free, Bouygues, Deutsche Telekom, KPN, Movistar, MEO, NOS, TIM, Wind Tre, Play, Telstra, Optus, Kyivstar, Lifecell, Vivo, Claro, Digi Mobil, MásMóvil, Yoigo, Lobster, Magti, Silknet, and Geocell. 
+
+ProxySmart is publicly associated with a Belarus-based vendor footprint and offers an end-to-end stack for operating and monetizing a physical farm, including device management, automated IP rotation, customer provisioning, plan enforcement, and anti-bot countermeasures. ProxySmart appears to function as OEM software used by multiple SIM farm operators. Its functionality spans farm management, device control, customer provisioning, retail proxy sales, and payment handling. In effect, it offers a fully fledged SIM farm as a Service platform. The platform is marketed as a turnkey solution rather than a tool intended only for highly technical operators. This likely lowers the technical barrier to establishing and operating mobile proxy infrastructure. 
+
+Across providers reviewed, meaningful KYC was uncommon, and some explicitly advertised that no KYC was required, making mobile carriers across the world broadly accessible to any buyer. Based on Infrawatch's review of downstream services, there is no clear indication that customers are required to be incorporated entities, accredited businesses, or otherwise subject to meaningful eligibility checks before purchasing access. 
+
+Infrawatch identified **87 exposed instances** of the ProxySmart control panel across the public internet. These panels shared an initial HTTP response fingerprint with SHA-256: **739f22524fb0fbb64d9bd8bd9e54df73e17abbe8807ca6df350f69078e4bf164**. Infrawatch Scope users can use the following pivot: `http.response.body.hash.sha256:"739f22524fb0fbb64d9bd8bd9e54df73e17abbe8807ca6df350f69078e4bf164"`. Some ProxySmart-powered providers market directly to Russian-speaking audiences as a means of obtaining U.S.-located mobile connectivity and accessing geo-restricted platforms. One Russia-based service linked to U.S.-hosted SIM farms openly advertised its offering on Telegram as a means of circumventing Russian state censorship. Several also appear to focus on specific use cases, including account creation, account management, posting, engagement, and general botting activity on major social platforms. 
+
+[Read full article](https://infrawatch.com/blog/inside-the-mobile-farm-the-oem-stack-powering-us-4g-5g-proxy-networks#blogpost)
