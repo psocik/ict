@@ -1,0 +1,22 @@
+---
+title: Flash Alert EtherRat and TukTuk C2 End in The Gentleman Ransomware
+date: 2026-05-11
+categories: [CYBERSECURITY]
+tags: [ETHERRAT,TUKTUK,RANSOMWARE,MALWARE,CYBERATTACK]
+---
+
+## Flash Alert: EtherRat and TukTuk C2 End in The Gentleman Ransomware 🚨
+
+In April, we observed an intrusion linked to an Atos-reported campaign where an **EtherRAT** was installed via a malicious MSI masquerading as a Sysinternals tool. Later in the intrusion, we noted the deployment of a new malware framework named **TukTuk**, first reported by Evangelos G, which, according to their analysis, is AI-generated. In addition to this, the threat actor used the RMM **GoTo Resolve**. Using this access, they successfully exfiltrated data to a cloud service and then deployed **The Gentlemen ransomware**. Notably, in this intrusion, the threat actor employed an array of SaaS platforms and blockchain infrastructure, which makes their campaign resilient to traditional network defenses. 
+
+We also observed a user execute a malicious MSI installer masquerading as the Sysinternals **RAMMap** utility. This installer deployed an **EtherRAT** variant that used the Ethereum blockchain through **EtherHiding** to dynamically update its command-and-control (C2) configuration. After execution, the malware downloaded a portable Node.js runtime, launched obfuscated JavaScript payloads, and established persistence through a registry Run key.
+
+The **EtherRAT** malware then contacted `1rpc[.]io` to retrieve configuration data hosted on the Ethereum blockchain. The threat actor later updated the Ethereum-hosted configuration, directing the malware to a new **TryCloudflare** tunnel and enabling active C2 communications. In addition to rotating in new C2 domains, the actor pushed decoy domains alongside the legitimate infrastructure. This created the appearance that C2 traffic was also flowing to those decoys, likely to complicate analysis and infrastructure attribution. Shortly after the config update, the malware initiated extensive host and domain reconnaissance, including system profiling, antivirus enumeration, domain checks, and LDAP-based user activity discovery. The actor then downloaded additional payloads from S3 buckets, ultimately deploying **TukTuk** malware variants disguised as **Greenshot** binaries and executed via DLL sideloading.
+
+These trojanized payloads established primary C2 channels through SaaS platforms **ClickHouse** and **Supabase**, with secondary backup channels capable of leveraging **Ably**, **Dropbox**, direct **HTTP**, or **GitHub Issues**. **TukTuk** can use **Arweave** as a dead-drop resolver. In this mode, the implant queries the **Arweave** blockchain for a specific Drive-Id, then retrieves an encrypted configuration blob. After execution of **TukTuk**, the threat actor began hands-on-keyboard activity, **Kerberoasting** operations, and credential discovery targeting administrative accounts. 
+
+Next, the threat actor leveraged compromised service account credentials to deploy **GoTo Resolve** remote management tooling laterally across multiple systems, including servers and domain controllers. Over the following days, they expanded access through **RDP**, **SMB**, **WinRM**, **NetExec (nxc)**, **Mimikatz**, and **LSASS/NTDS** dumping activity while resetting privileged account passwords and conducting broad **Active Directory** reconnaissance. Concurrently, the actor staged and executed **Rclone** to exfiltrate large volumes of sensitive data to **Wasabi** cloud storage before deploying additional **TukTuk** implants across critical infrastructure. 
+
+Three days into the intrusion, ransomware operations began with the deployment of **The Gentlemen ransomware** on key servers. Prior to encryption, the actor disabled **Microsoft Defender** protections, added AV exclusions, stopped virtual machines, deleted shadow copies, cleared event logs, and removed forensic artifacts. The intrusion ended in domain-wide ransomware deployment through a malicious **Group Policy Object (GPO)** that executed staged ransomware binaries within **SYSVOL/NETLOGON** via scheduled tasks across the environment.
+
+To read the complete article see: [Read full article](https://thedfirreport.com/2026/05/11/flash-alert-etherrat-and-tuktuk-c2-end-in-the-gentleman-ransomware/)
