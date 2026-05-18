@@ -1,0 +1,16 @@
+---
+title: Security Update Guide - Loading
+date: 2026-05-16
+categories: [SECURITY]
+tags: [SECURITY,UPDATE,VULNERABILITY,MICROSOFT]
+---
+
+## Security Update Guide - Loading
+
+The Base Score increases the more remote (logically, and physically) an attacker can be in order to exploit the vulnerable component. If the vulnerable component is bound to the network stack, the set of possible attackers extends up to and including the entire Internet. Such a vulnerability is often termed 'remotely exploitable' and can be thought of as an attack being exploitable at the protocol level one or more network hops away (e.g., across one or more routers). This metric also describes the conditions beyond the attacker's control that must exist in order to exploit the vulnerability. When 'Low,' specialized access conditions or extenuating circumstances do not exist, and an attacker can expect repeatable success against the vulnerable component. The level of privileges an attacker must possess before successfully exploiting the vulnerability is also captured. If 'None,' the attacker is unauthorized prior to attack, and therefore does not require any access to settings or files to carry out an attack. Additionally, the requirement for a user, other than the attacker, to participate in the successful compromise is measured. If 'Required,' successful exploitation of this vulnerability requires a user to take some action before it can be exploited.
+
+A successful attack's impact on a component other than the vulnerable component is determined by the Scope metric. If 'Unchanged,' an exploited vulnerability can only affect resources managed by the same security authority. In this case, the vulnerable component and the impacted component are either the same, or both are managed by the same security authority. This metric also measures the impact to the confidentiality of information resources. When 'High,' there is total loss of confidentiality, resulting in all resources within the impacted component being divulged to the attacker, or access to restricted information that presents a direct, serious impact. Similarly, the impact to integrity is measured. A 'High' integrity impact means total loss, or a complete loss of protection, such as the attacker being able to modify any/all files protected by the impacted component. For availability, if 'None,' there is no impact to availability within the impacted component.
+
+The likelihood of the vulnerability being attacked is typically based on the current state of exploit techniques or public availability of exploit code. If 'Functional,' exploit code is available and works in most situations where the vulnerability exists. The Remediation Level of a vulnerability is an important factor for prioritization. An 'Official Fix' means a complete vendor solution is available, either an official patch or an upgrade. Finally, the degree of confidence in the existence of the vulnerability and the credibility of the known technical details is assessed. When 'Confirmed,' detailed reports exist.
+
+For more information, check out the full article: [Read full article](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-42897) 🚀
