@@ -1,0 +1,20 @@
+---
+title: Hackers Hate AI Slop Even More Than You Do
+date: 2026-05-21
+categories: [TECHNOLOGY]
+tags: [HACKERS,AI,CYBERCRIME,SECURITY]
+---
+
+## Hackers Hate AI Slop Even More Than You Do
+
+"I'm disappointed that you are working to incorporate AI garbage into the site," one annoyed person, posting anonymously, said in an online message. This is not just a regular internet user moaning about AI being forced into their favorite app; instead, they are complaining about a cybercrime forum's plans to introduce more generative AI. Like millions of others, scammers, grifters, and low-level hackers are getting annoyed about AI encroaching into their lives and the rise of low-quality AI slop being posted in their online communities. **"People don't like it,"** says Ben Collier, a security researcher and senior lecturer at the University of Edinburgh.
+
+As part of a recent study into how low-level cybercriminals are using AI, Collier and fellow researchers spotted an increasing pushback over the use of generative AI in underground cybercrime forums and hacking groups.
+
+The researchers analyzed 97,895 AI-related conversations on cybercrime forums since the launch of ChatGPT in 2022 until the end of last year. They found complaints about people dumping "bullet-pointed explainers" of basic cybersecurity concepts, moaning about the number of low-quality posts, and concerns about Google's AI search overviews driving down the number of visitors to the forums. **"These are essentially social spaces. They really hate other people using [AI] on the forums,"** Collier says. He explains that the social dynamic of the groups can be disrupted by potential cybercriminals trying to gain a better reputation by posting AI-generated hacking explainers. **"I think a lot of them are a bit ambivalent about AI because it undermines their claim to be a skilled person."
+
+Posts reviewed by WIRED on Hack Forums, a self-styled space for those interested in talking about hacking and sharing techniques, show an irritation caused by people creating posts with AI. **"I see a lot of members using AI for making their threads/posts and it pisses me off since they don't even take the time to write a simple sentence or two,"** one poster wrote. Another put it more bluntly: **"Stop posting AI shit."** In several instances, Collier says, users of multiple forums appear to be irritated by AI posts as they want to make friends. **"If I wanted to talk to an AI chatbot, there are many websites for me to do so ... I come here for human interaction,"** one post cited in the research says.
+
+Since ChatGPT emerged toward the end of 2022, there has been significant interest in AI-hacking capabilities and how the technology can transform online crime. **"More sophisticated threat actors are aware of the shortfalls of commercial models that have guardrails, and they know ways to jailbreak those prompts,"** says Ian Gray, vice president of intelligence at the security company Flashpoint. **"They're also cautious of AI-generated projects in forums or marketplaces--there are weaknesses and vulnerabilities, sometimes exposing the underlying infrastructure,"** Gray says. Flashpoint has seen hackers recently talking about the potential capabilities of Claude Mythos Preview, Anthropic's latest frontier AI model. Collier says that so far, among the lower-level cybercriminals that his study tracked--not sophisticated or nation-state-backed hackers--there hasn't been any obvious signs of **"real disruption"** caused by AI. **"It has not significantly reduced the skill barrier to entry, nor has it led to serious disruptions to established business models or practices,"** the study says. **"Instead, its main impact has been on already highly automated areas such as SEO fraud, social media bots, and some forms of romance scam.**
+
+[Read full article](https://www.wired.com/story/cybercriminals-are-complaining-about-ai-slop-flooding-their-forums/)
