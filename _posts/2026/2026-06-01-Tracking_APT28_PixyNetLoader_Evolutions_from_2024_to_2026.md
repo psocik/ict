@@ -1,0 +1,18 @@
+---
+title: Tracking APT28 PixyNetLoader Evolutions from 2024 to 2026
+date: 2026-06-01
+categories: [CYBERSECURITY]
+tags: [APT28,MALWARE,PIXYNETLOADER,CYBERSECURITY]
+---
+
+## Tracking APT28 PixyNetLoader: Evolutions from 2024 to 2026
+
+In this article, we will examine the evolutions of the APT28 PixyNetLoader code family. By analyzing approximately 90 samples and studying the shared code between them, we can identify **four major different sub-families**. This threat fits a relatively standard compromise scheme through vulnerability exploitation via a malicious .DOC file (CVE-2026-21509 in February 2026) executing a version of the SimpleDropper code, which in turn drops a PixyNetLoader DLL installed via COM persistence and a PNG file. PixyNetLoader loads the .PNG file, extracts a Covenant Grunt payload from the pixels' LSBs, using the filen service for communication. We chose to cover the PixyNetLoader code because it is the most likely to be detected on a network since it is installed with persistence and is not encrypted. Furthermore, an article from CERT-UA in February 2026 shows that it is still current. 🚀  
+
+A first sample, `52b6fb40e7efb09c2bebe8550178e7e30009600bdedd1acae085d753761b7598`, referenced in the February Cert UA article, is a PixyNetLoader. The DLL will be installed via COM persistence and will perform steganography to extract a shellcode from the PNG data in its companion file (`%programdata%\Microsoft OneDrive\setup\Cache\SplashScreen.png`), and which exports itself as `EhStorShell.dll`. The payload is contained in the least significant bits of the file's pixels. A similarity search immediately reveals two other samples: `a876f648991711e44a8dcf888a271880c6c930e5138f284cd6ca6128eca56ba1` referenced in the Operation Neusploit campaign, compiled on 2026-01-23, and `7acb7ed2c8609d235d356a17058684fcf39beaa492f1369897ceeb7b71f5ff0a` compiled on 2026-01-23. These are similar codes, slightly modified but based on the same source.  
+
+We have listed a total of **23 different versions** of PixyNetLoader, ranging from 2024-04-12 to 2026-04-15. Among these 23 versions, we can find **four different families**, by cross-referencing the similar functions in each: **Family A**, described in Operation Phantom Net Voxel, which covers from December 2024 to July 2025, with three versions on January 21 and 23, 2026, described in Operation Neusploit. **Family 58a6e3e4**, which includes a single version from 2025-09-04, is particularly noteworthy because approximately **430 samples** of it can be found on VirusTotal, with slightly and randomly modified code. Certain functions responsible for PNG header parsing disappear, such as functions dealing with RGBA codes, grayscale levels, etc. **Family B** covers from September 2025 to March 2026. **Family C** begins on 2026-03-13, and we note here a modification of the payload loading using a new steganography mode. Some codes of the C family are barely detected, such as `a5729b6e36c0ab4798db5004700a1fe843f4d1b0811023c47b7b2972befb6360` which only two engines detect.  
+
+Writing rules targeting these similarities is interesting because it allows for better categorization of samples by internal functioning. It is by using function comparisons and defining YARA rules on common functions that we were able to establish larger families. For example, common functions include: code responsible for LSB processing of PNG files (Families A, B, and C), PE Parser (Families B and C), specific string encryption (all), and code responsible for Family C steganography. Analyzing the PNG library of strain A makes it quite easy to write a YARA rule.  
+
+[Read full article](https://blog.exatrack.com/Tracking_APT28_PixyNetLoader/)
