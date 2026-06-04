@@ -1,0 +1,20 @@
+---
+title: Understanding Illicit Ecosystems XSS and the Current State of the Russian-Speaking Underground
+date: 2026-06-03
+categories: [CYBERSECURITY]
+tags: [XSS,CYBERCRIME,RUSSIAN-SPEAKING,UNDERGROUND]
+---
+
+## Understanding Illicit Ecosystems: XSS and the Current State of the Russian-Speaking Underground
+
+For more than two decades, **XSS** has been the gathering ground for the Russian-speaking cybercriminal underground. Evolving from its former name, **DaMaGeLaB**, XSS transformed from a mid-tier message board into a top-tier hacking forum. XSS is home to vendors of various crime types, including loaders, phishing, scamming, carding, malware development, distributed denial-of-service (DDoS) bots, and related services. It also facilitates the trade of illicit goods and services while simultaneously serving as a networking and recruitment hub for threat actors. 🚨
+
+On **July 23, 2025**, law enforcement organizations reportedly seized XSS as part of a multinational operation with Ukrainian authorities, French police, and Europol. Alongside the domain seizure, French authorities reported the arrest of XSS's longtime administrator in Ukraine. This arrest triggered an immediate chain reaction that has had lasting effects on the Russian-speaking underground, with the XSS ecosystem splintering into several competing factions.
+
+While the original XSS architecture was severely disrupted, the surrounding Russian-speaking cybercriminal ecosystem remains intensely active. However, instead of a centralized hub, the XSS ecosystem is spread out through competing environments that emerged directly from the fallout of the takedown. Launched by the legacy moderators of XSS, **DamageLib** represents a structural pivot away from standard illicit forums. Concluding that the old XSS site was compromised by law enforcement, the moderators launched a new model that completely abandons commerce—shutting down all buying, selling, and auctions entirely—to eliminate user tracking and surveillance. Instead, it focuses strictly on technical materials and tutorials.
+
+Recognizing that displaced cybercriminals still required a commercial venue to trade, a former XSS moderator launched **Rehub** quickly after the emergence of DamageLib. Rehub immediately integrated a commercial platform, successfully recruiting prominent threat actors into its moderation team to establish underground credibility. In early **August 2025**, an unknown entity launched an alleged resurrection of the forum on a new domain [.pro], utilizing old backups that preserved legacy user data, threads, and forum deposits. However, this new version has been met with significant distrust from **Exploit** and **DamageLib**, believing the [.pro] domain to be a honeypot controlled by law enforcement. Separately, the **XSSF Forum** was started by a pro-Russian Telegram hacking group, and this community actively targets EU and Ukrainian digital infrastructure. According to user discussions on DamageLib, this forum is not related to XSS. Flashpoint analysts note that targeting Ukrainian infrastructure directly contradicts its original community rules. The authenticity of this forum and its ownership has not been verified.
+
+While law enforcement achieved a significant victory over XSS, they did not eliminate the Russian-speaking cybercriminal underground. Instead, they broke the foundational trust mechanics that had kept it centralized for twenty years. This has left the Russian-speaking underground in a deeply fractured state that is still intensely active and highly adaptive. For defenders and analysts, this threat has not diminished—it has diversified. Tracking this ecosystem no longer means watching a single centralized community, but rather actively mapping out the live migrations, shifting rules, and behavioral patterns across these splintered groups.
+
+[Read full article](https://flashpoint.io/blog/understanding-illicit-ecosystems-xss-russian-speaking-underground/)
