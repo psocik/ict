@@ -1,0 +1,24 @@
+---
+title: Peter Thiel's Secret Society Leak Creates a Perfect Target List for Espionage, Influence Operations, and Blackmail
+date: 2026-06-19
+categories: [SECURITY]
+tags: [PETER THIEL,DATA BREACH,ESPIONAGE,INFLUENCE OPERATIONS,BLACKMAIL]
+---
+
+## Peter Thiel's Secret Society Leak 🚨
+
+A simple website flaw exposed members, political profiles, login tokens, and dating data from Peter Thiel's secretive Dialog network. Dialog, a private invitation-only organization cofounded in 2006 by billionaire tech investor Peter Thiel, has spent two decades refusing to disclose its membership. That position became harder to maintain last week when Swiss hacktivist Maia Arson Crimew, known for exposing the US government's No Fly List, found an open directory embedded in the source code of dialog.org that was visible to anyone who viewed the page.
+
+WIRED independently verified the contents and obtained the registration list for Dialog's 2026 retreat, scheduled for August 12-16 near Dublin, Ireland. "A trove of internal records from a secret society for powerful figures in US politics, finance, and tech was left exposed online," WIRED has confirmed, naming participants in its events and revealing sensitive personal details they were assured would stay private.
+
+The 2026 list names 222 registrants, 87 of them first-time attendees. The roster is not a list of adjacent power; it's power in direct regulatory relationship with itself. Treasury Secretary Scott Bessent appears alongside Auren Hoffman, Dialog's chairman, who founded location-data broker SafeGraph and identity-resolution firm LiveRamp. Senator Ted Cruz, who chairs the committee overseeing the FTC and its data-privacy authority, is listed in the same directory. Palantir cofounder Joe Lonsdale, whose software runs case management for ICE and data fusion for the Pentagon, appears alongside Army Secretary Dan Driscoll and Representative Jim Himes, ranking member of the House Intelligence Committee, which oversees agencies Palantir contracts with.
+
+Forbes confirmed additional members including investor Marc Andreessen and investor and former Facebook board member Jim Breyer. General Alexus Grynkewich, NATO's supreme allied commander Europe and head of US European Command, is recorded as having attended Dialog gatherings since 2021. "The website directory names sitting Trump administration officials, two US senators, six members of the Paypal Mafia, a former Middle East chief of intelligence, and a sitting ambassador to the United States, along with the founders and directors of many of the country's largest surveillance, data-broker, and advertising-data companies," Wired continues.
+
+The leaked registration list adds names not in the public directory of 113: Randy Kroszner, former Federal Reserve governor now on the Bank of England's Financial Policy Committee; Jonathan Greenblatt, CEO of the Anti-Defamation League; Ryan Stowers, executive director of the Charles Koch Foundation; Roger Myerson, Nobel laureate economist; and a cluster of Google and Google DeepMind executives including Tom Lue, who leads global affairs for the frontier AI division.
+
+The data breach is structurally embarrassing because it was entirely avoidable. The directory was served to any visitor who viewed the page's source code. A separate Dialog page at app.dialog.org presents a sign-in screen with no terms of service, no indication the application is restricted, and no invitation requirement. The records sat in Airtable, a commercial database, and included for each participant their membership status, every retreat attended, biography, home city, and a private access token functioning as a login credential. Dialog also runs a matchmaking service. Its registration form asks whether participants are "looking for love" and offers to include single respondents in "future matchmaking." The form also collects each registrant's political leaning, which Dialog promised would never be shared. "That data, and the matchmaking responses, were exposed in the leak," concludes Wired.
+
+The data collected by Dialog could be valuable for criminals or intelligence agencies because it reveals personal vulnerabilities, relationship status, political views, and access to influential networks. Such information can support targeted phishing, social engineering, honey-trap operations, blackmail, or influence campaigns. The risk is amplified because participants are often members of the global elite, making them attractive intelligence targets. Many may be highly accomplished in their fields but still willing to share sensitive personal details in trusted environments, creating opportunities for manipulation and exploitation.
+
+[Read full article](https://securityaffairs.com/193880/intelligence/peter-thiel-secret-society-leak-creates-a-perfect-target-list-for-espionage-influence-operations-and-blackmail.html)
