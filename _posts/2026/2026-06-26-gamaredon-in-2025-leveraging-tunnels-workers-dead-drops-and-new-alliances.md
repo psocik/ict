@@ -1,0 +1,16 @@
+---
+title: Gamaredon in 2025 Leveraging Tunnels, Workers, Dead Drops, and New Alliances
+date: 2026-06-26
+categories: [CYBERSECURITY]
+tags: [GAMAREDON,CYBERESPIONAGE,RUSSIA,UKRAINE,SECURITY]
+---
+
+## Gamaredon in 2025: Leveraging Tunnels, Workers, Dead Drops, and New Alliances
+
+Cyberespionage has remained a constant feature of Russia's war against Ukraine. ESET Research has long tracked Gamaredon, one of the most active Russia-aligned advanced persistent threat (APT) groups targeting Ukraine. The group, attributed by the Security Service of Ukraine (SSU) to the 18th Center of Information Security of Russia's FSB, maintained a high operational tempo throughout 2025. Throughout 2025, Gamaredon exclusively targeted governmental and military institutions in Ukraine. The group's ultimate goal continues to be the exfiltration of sensitive information and other critical data that could be exploited to support Russian interests in the ongoing war in Ukraine. Gamaredon's activities appear to be closely aligned with Russia's geopolitical objectives, targeting Ukrainian governmental and military institutions to gain an intelligence advantage.  
+
+We observed 35 distinct spearphishing campaigns against new targets. The majority of the campaigns were carried out in the second half of the year, and they were significantly larger than earlier ones. Gamaredon operators developed and deployed six new malicious PowerShell tools and resurrected an old VBScript weaponizer - PteroSetup. The file stealers PteroVDoor and PteroPSDoor were upgraded to support exfiltration to cloud storage services (Wasabi, Tebi, and Intercolo), which became the primary exfiltration method. Late in the year, the group also introduced a new technique - from September 26th, 2025 onward, it began abusing CVE-2025-8088, a WinRAR vulnerability, to place its usual malicious HTA downloader into the victim's Startup folder. That allowed the downloader to execute on the next login, adding persistence to a compromise chain that had previously relied more heavily on user interaction. Beyond spearphishing, Gamaredon also continued using custom weaponizers for lateral movement.  
+
+Gamaredon operators sought new ways to protect their network infrastructure, with their C&C servers now hidden behind various third-party services such as tunnels, workers, DDNS (dynamic DNS), and PaaS (platform as a service). They also abused multiple legitimate messaging, social media, blogging, and paste services as dead drops for resolving C&C servers and distributing payloads. By the end of 2024, Gamaredon was already relying heavily on Cloudflare tunnels (trycloudflare.com) to conceal its infrastructure, and in 2025 it expanded that approach further. In May, we began seeing the group hide C&C servers behind Cloudflare workers (workers.dev), and in June it added Microsoft's devtunnels.ms and Loophole (loophole.site). Additionally, we uncovered that in early 2025, Gamaredon collaborated with Turla, another Russia-aligned threat actor also linked to the FSB. This cooperation underscores the potential for coordinated cyberespionage campaigns among Russia-aligned groups, likely to amplify their operational impact.  
+
+[Read full article](https://www.welivesecurity.com/en/eset-research/gamaredon-2025-leveraging-tunnels-workers-dead-drops-new-alliances/)
