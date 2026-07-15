@@ -1,0 +1,18 @@
+---
+title: Burnt by Burgers Highlighting Void Blizzard's Russian State Links
+date: 2026-07-14
+categories: [CYBERSECURITY]
+tags: [VOID BLIZZARD,RUSSIAN STATE,CYBERESPIONAGE,FBI,OBREZKO]
+---
+
+## Burnt by Burgers: Highlighting Void Blizzard's Russian State Links
+
+On **30 October 2025**, Russian citizen **Denis Obrezko** landed in **Phuket, Thailand**. Less than a week later, Thai authorities arrested him at the request of the **FBI**. Obrezko has since been extradited and indicted in the United States, where he is accused of participating in the Russian state-aligned threat group **Void Blizzard**, also known as **Laundry Bear**. Following his arrest, Moscow reportedly placed Obrezko on an international wanted list, issuing an arrest warrant. We assess this may have been intended to distance the Russian state from him by presenting Obrezko as a rogue criminal rather than a state-linked operative. Using identifiers disclosed in FBI affidavits and indictments, **Ctrl-Alt-Intel** identified evidence connecting Obrezko to the **Information and Analytical Center of EMERCOM of Russia**, a state institution within Russia's Ministry of Emergency Situations. Our findings indicate that this connection was active during at least **2021**.
+
+Microsoft named **Void Blizzard** in **May 2025**, describing it as a Russia-affiliated threat actor conducting cyberespionage against **NATO** member states and **Ukraine**. Working with the Netherlands' **AIVD** and **MIVD** intelligence agencies, Microsoft tracked the group from at least **April 2024**. In **April 2025**, it observed Void Blizzard using spear phishing to steal credentials. Although its techniques were not unique, Microsoft reported that they achieved widespread success. Microsoft also identified targeting overlaps with other Russian state actors, including **GRU**-aligned groups, suggesting shared intelligence-collection priorities.
+
+In **June 2026**, US authorities released indictments and affidavits alleging that Obrezko had a history of involvement with Russian intelligence. According to the indictment, "between approximately **2012 and 2017**, OBREZKO worked in an unknown capacity for [...] the **Federal Security Service**," or **FSB**. The indictment further alleges that, from at least **2024**, Obrezko worked as deputy director of the Russian technology company **Yutek-NN**, which US authorities link to Void Blizzard's operations. Public records show that Yutek-NN holds an FSB-issued license covering regulated surveillance-related technology.
+
+The FBI affidavit identifies Obrezko and lists infrastructure, IP addresses, domains, email addresses, and a mobile number allegedly connected to him. These identifiers allowed Ctrl-Alt-Intel to examine breached datasets for additional evidence concerning Obrezko's professional history and connections to the Russian state. Data from the **2012 VK breach** contains an account associated with the email address **w1sper@mail.ru** and mobile number **+79263799902**. This account listed Obrezko's full name as **Денис Wisperrrrr Обрезко** (Denis Wisperrrrr Obrezko) and his university specialty as **Information Security** as early as **2012**. Additionally, EMERCOM contains a sub-department, **ИАЦ МЧС РОССИИ**, the "Information and Analytical Center", which is reportedly responsible for the internal IT & information security of EMERCOM.
+
+To read the complete article see: [Read full article](https://ctrlaltintel.com/research/VoidBlizzard/)
