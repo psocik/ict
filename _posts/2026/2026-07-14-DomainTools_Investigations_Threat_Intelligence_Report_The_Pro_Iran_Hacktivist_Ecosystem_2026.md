@@ -1,0 +1,22 @@
+---
+title: DomainTools Investigations Threat Intelligence Report - The Pro-Iran Hacktivist Ecosystem 2026
+date: 2026-07-14
+categories: [CYBERSECURITY]
+tags: [IRAN,HACKTIVISM,CYBERSECURITY,THREAT INTELLIGENCE]
+---
+
+## DomainTools Investigations Threat Intelligence Report - The Pro-Iran Hacktivist Ecosystem 2026
+
+The cyber environment surrounding the U.S.-Iranian conflict and regional tensions has produced a decentralized wartime cyber ecosystem in service of Iran. It is not a single organized force; instead, it is a loose mix of jihadist-aligned cyber collectives, nationalist actors, and state-adjacent influence networks that converge around shared enemies and geopolitical narratives. 
+
+The ecosystem operates through **Telegram channels** and websites, shared target lists, **DDoS-for-hire tools**, recycled breach data, and leak-amplification campaigns. Most activity remains technically unsophisticated. DDoS attacks, website defacements, and hack & leak extortion-style messaging with exaggerated claims are more common than verified advanced intrusions. The strategic effect comes less from technical capability than from speed, visibility, and ideological framing that make it into news cycles. Even with limited high-end capability, loosely aligned ideological and state-adjacent networks can impose psychological, political, and economic pressure on adversaries during periods of regional crisis.
+
+The current pro-Iran and "Axis of Resistance" cyber ecosystem is decentralized, blending hacktivist groups, ideological cyber militias, influence operators, and jihadist cyber propagandists. Their primary tradecraft centers on **DDoS campaigns**, hack-and-leak operations, propaganda amplification, and extortion-style messaging. Targeting is often symbolic, with activity directed against government, telecommunications, healthcare, finance, logistics, and open-source infrastructure that is aligned with, or within the borders of, the enemies of the state they are supporting.
+
+Groups such as **Handala**, **313 Team**, **Cyber Islamic Resistance**, **Fatimiyoun/FAD Team**, **Dark Storm**, **CJM**, **Keymous+**, **DieNet**, **MONARCH**, **Killnet**, and other coalition actors create the appearance of a broad transnational cyber front. One notable example of this activity is the **May 2026 DDoS campaign** against Canonical and Ubuntu infrastructure. As tensions rise around the Strait of Hormuz and the wider regional conflict, these actors should be treated as deniable asymmetric auxiliaries.
+
+The **Islamic Cyber Resistance in Iraq**, also known as **313 Team**, is one of the most visible Iraqi resistance-branded cyber personas in the pro-Iran ecosystem. Operationally, 313 Team focuses on DDoS attacks and website disruption. The group gained visibility during the aforementioned May 2026 DDoS campaign against Canonical and Ubuntu infrastructure. The campaign affected ubuntu.com, Launchpad package repositories, and security APIs update systems as well as related services used by enterprise and cloud environments. The group claimed use of the "Beamed" DDoS-for-hire platform. Its threat assessment is moderate-to-high for DDoS, disruption, propaganda amplification, and wartime information operations; low-to-moderate for opportunistic intrusion activity; currently low for verified advanced destructive or cyber-physical capability.
+
+**Handala Hack Team** is among the most consequential and psychologically sophisticated actors in the pro-Iran ecosystem. Handala specializes in hack-and-leak operations, intimidation campaigns, identity exposure, and coercive information operations. Its activity aligns closely with Iranian information warfare objectives, even where formal command relationships remain unconfirmed. Recent attacks have leveraged hack and wiper activities that place Handala at a higher level of damage capabilities than the others profiled here. Its threat assessment is high for psychological operations, hack-and-leak activity, and reputational damage; moderate for broader disruptive capability.
+
+To read the complete article see: [Read full article](https://dti.domaintools.com/research/threat-intelligence-report-the-pro-iran-hacktivist-ecosystem-2026)
