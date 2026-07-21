@@ -1,0 +1,18 @@
+---
+title: Cruciferra Crypter Uses Process Ghosting to Evade Detection
+date: 2026-07-20
+categories: [CYBERSECURITY]
+tags: [CRYPTER,MALWARE,CYBERSECURITY,PROCESS-GHOSTING]
+---
+
+## Cruciferra Crypter Uses Process Ghosting to Evade Detection
+
+A crypter service used by multiple unrelated cyber-criminal groups has been documented cloaking commodity malware with process ghosting, kernel-driver abuse, and more than 90 mix-and-match encryption routines. According to new research from Proofpoint published on July 20, the crypter, marketed as **Cruciferra**, was first offered for sale on the Exploit forum in autumn 2025 and now underpins dozens of campaigns delivering AsyncRAT, Agent Tesla, Remcos, XWorm, ValleyRAT, and Snake Keylogger. Tiered access runs from **$450 to $2,000 a month**. Proofpoint identified both production and apparent testing samples, suggesting active development. On dark web forums, Cruciferra calls itself "the underground's most lethal crypter."
+
+In the observed campaigns, Proofpoint said Cruciferra always executed through DLL side-loading. Victims received a ZIP pairing a legitimate executable with a malicious DLL. Running the executable side-loaded the DLL, which inspected the environment before dropping the payload. Before executing, the crypter unhooked endpoint detection and response (EDR) monitoring at multiple levels. It patched the Import Address Table, read a clean copy of ntdll.dll to source indirect syscalls, and disabled kernel-level telemetry by loading a vulnerable signed driver such as GoFlyDrv.sys, then issuing IOCTL commands to terminate security processes. This bring-your-own-vulnerable-driver (BYOVD) approach mirrors techniques seen in the GentleKiller framework, which the Gentlemen ransomware gang distributes to affiliates. Payloads sat in the binary's .reloc section and were unpacked using one of over 90 encryption routines, each assembled from parts of established algorithms including Keccak, Threefish, and Feistel variants, so the cipher covering one sample rarely matched the next.
+
+For the final execution step, Cruciferra employed a modified form of process ghosting. The classic technique creates a temporary file marked for deletion, fills it with the payload, and uses it as the backing image for a suspended process, leaving a running process backed by a PE image that no longer exists on disk in scannable form. Cruciferra added two anti-inspection layers. It patched ZwQueryVirtualMemory so EDR queries against the ghosted memory returned a sanitized result and neutered NtManageHotPatch, the kernel function that can validate a loaded image against its on-disk counterpart.
+
+Proofpoint attributed multiple campaigns using the malware to the Chinese-speaking group **TA4922**, which used tax-themed lures impersonating the Indian Income Tax Department to deliver AsyncRAT via Cruciferra between late April and early June. Separate May campaigns spoofed the US Social Security Administration to deliver XWorm, and a late-June operation used bed-bug guest-complaint lures against hospitality organizations to drop zgRAT. Financial services accounted for **34%** of observed targets, followed by healthcare at **25%** and government at **10%**, though Proofpoint characterized the targeting as opportunistic. The company said new Cruciferra-packed samples appeared on VirusTotal every few minutes on July 9.
+
+[Read full article](https://www.infosecurity-magazine.com/news/cruciferra-crypter-process-ghosting/)
