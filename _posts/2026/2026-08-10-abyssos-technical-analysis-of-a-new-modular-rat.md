@@ -1,0 +1,18 @@
+---
+title: Abyssos Technical Analysis of a New Modular RAT
+date: 2026-08-10
+categories: [CYBERSECURITY]
+tags: [MALWARE,RAT,CYBERSECURITY,ANALYSIS]
+---
+
+## Abyssos: Technical Analysis of a New Modular RAT
+
+In late June 2026, Zscaler ThreatLabz identified a new malware family that we track as **Abyssos**. Abyssos is a new modular remote administration tool (RAT) written in C++ that supports a variety of features including credential theft, file exfiltration, and remote access via VNC. Abyssos is in active development with multiple version numbers and different obfuscation passes designed to improve evasion from security products.
+
+Abyssos uses common obfuscation methods as an anti-analysis measure. It checks for the presence of hypervisors, such as VMware, KVM, and VirtualBox; if detected, Abyssos terminates execution. Additionally, it checks for specific process names and exits if any are running, including `vmtoolsd.exe` and `VBoxService.exe`. Abyssos also uses different intermediate representation (IR) passes to obfuscate the binary code, such as control flow flattening, bogus control flow, and stack-based string obfuscation. Not all samples identified implement these anti-analysis techniques; for example, the most recent version of Abyssos does not include them. Before executing its core functionality, Abyssos dynamically loads required Windows API functions and creates a mutex, following the format `Global[UUID4]`, to ensure only one instance is running.
+
+Abyssos primarily uses AES in GCM mode with a hardcoded 32-byte key for encrypting both incoming and outgoing network data. Upon initialization, it initiates a TCP connection with the C2 server, collects host information like CPU architecture, computer name, username, public IP, and country of origin, and sends this information to the C2 server to register the compromised system. Abyssos supports numerous network commands, including `HVNC_START` for starting a VNC session, and `HVNC_PROG` to start specified applications under the VNC session. For example, it can launch `chrome_cdp` to hijack browser sessions by setting stored cookies. Other commands allow it to start `notepad`, `cmd`, `powershell`, and various browsers like `vivaldi`, `opera`, and `firefox`.
+
+The RAT's capabilities extend to system manipulation and data exfiltration. Abyssos can perform UAC bypass methods via `fodhelper` or `ICMLuaUtil`, and collect clipboard data with `CLIPBOARD_START`. It can also start a grabber thread with `GRABBER_START` to scan and collect specified directories/files based on parameters like `dirs` and `exts`. Process management commands include `PM_LIST`, `PM_KILL`, `PM_SUSPEND`, and `PM_RESUME`. File management features allow listing (`FM_LIST`), deleting (`FM_DEL`), uploading (`FM_GET`), and downloading (`FM_PUT`) files, as well as compressing directories into ZIP archives with `FM_ARCHIVE` or `FM_ADDTOARCHIVE` for C2 exfiltration. Further, Abyssos supports `REMOTEDESKTOP_START` for screen recording, `KEYLOGGER_GETLOGS` to read captured keystrokes, and `EXECURL` to download and execute files, attempting deletion 5 seconds post-execution. It also includes `EXECURL_AES_HOL` for downloading encrypted shellcode and injecting it into specified processes.
+
+For more details, check out the full article here: [Read full article](https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat)
