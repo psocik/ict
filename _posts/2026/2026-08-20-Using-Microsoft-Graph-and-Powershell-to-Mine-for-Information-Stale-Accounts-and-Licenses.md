@@ -1,0 +1,18 @@
+---
+title: Using Microsoft Graph and Powershell to Mine for Information - Stale Accounts and Licenses
+date: 2026-08-20
+categories: [TECHNOLOGY]
+tags: [MICROSOFT,GRAPH,POWERSHELL,INFORMATION,ACCOUNTS,LICENSES]
+---
+
+## Using Microsoft Graph and Powershell to Mine for Information - Stale Accounts and Licenses
+
+Microsoft Graph is a newer API that is meant to replace several others. It allows you to Get and Set info from/to M365, Entra Users, and Entra managed machines for starters. To begin, users need to connect to their Entra account/directory using `Connect-MgGraph -Scopes "User.Read.All"`. One can start exploring by dumping a user table with `$AllUsers = Get-MgUser -All -Property Id, DisplayName, UserPrincipalName, AccountEnabled, SignInActivity | Where-Object { $_.AccountEnabled -eq $true }`. The "-All" is crucial as this API has a default "first 100 objects" limit; for managing an actual domain, "-All" is typically required.
+
+If you want the last password change included, you'll need to ask for that in the initial `get-mguser` call, as it's not in the default returned list of results. This can be achieved with `Get-MgUser -All -Property DisplayName, UserPrincipalName, LastPasswordChangeDateTime`. For understanding assigned licenses, a different command is needed to get human-readable details. While `Get-MgUser -UserId $u -Property AssignedLicenses` shows SkuIds (GUIDs), `get-mguserlicensedetail -userid $u | Select-Object SkuId, SkuPartNumber` provides useful details such as `SPE_E3` or `Microsoft_365_Copilot`.
+
+To build a comprehensive report, it's possible to pull last interactive and non-interactive login dates and combine license details directly into a single `Get-MgUser` call. The properties to pull can be specified as: `$Properties = @('AccountEnabled','City','Country','Department','DisplayName','JobTitle','UserPrincipalName','CreatedDateTime','SignInActivity', 'LastPasswordChangeDateTime')`. The full command combines these properties with computed statements for readability: `$Users = Get-MgUser -All -Property $Properties | Select-Object @{N='AccountEnabled';E={$_.AccountEnabled}}, @{N='City';E={$_.City}}, @{N='Country';E={$_.Country}}, @{N='Department';E={$_.Department}}, @{N='DisplayName';E={$_.DisplayName }}, @{N='JobTitle';E={$_.JobTitle }}, @{N='UserPrincipalName';E={$_.UserPrincipalName}}, @{N='CreatedDateTime';E={$_.CreatedDateTime}}, @{N='LastInteractiveSignInDate';E={$_.SignInActivity.LastSignInDateTime}}, @{N='LastNonInteractiveSignInDate';E={$_.SignInActivity.LastNonInteractiveSignInDateTime}}, @{N='License';E={(Get-MgUserLicenseDetail -UserId $_.UserPrincipalName).SkuPartNumber -join '; '}}`. This process can take a while, as the sign-in date fields and license detail line add time for each user.
+
+With this collected data, security teams have the last login dates to pick off inactive accounts and monitor license usage. It also identifies accounts that have been explicitly disabled using the "AccountEnabled" field. Dumping the whole thing out to a CSV file with "| Out-CSV" allows for sorting to generate a list of MS licenses that can potentially be ceased for payment, and a list of Entra accounts that can likely be disabled or deleted. This provides clear actionable intelligence for account management and cost optimization.
+
+[Read full article](https://isc.sans.edu/forums/diary/Using%20Microsoft%20Graph%20and%20Powershell%20to%20Mine%20for%20Information%20-%20Stale%20Accounts%20and%20Licenses/33264/)
