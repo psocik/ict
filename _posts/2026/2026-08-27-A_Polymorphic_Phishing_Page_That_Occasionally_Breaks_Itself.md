@@ -1,0 +1,21 @@
+---
+title: A Polymorphic Phishing Page That Occasionally Breaks Itself
+date: 2026-08-27
+categories: [CYBERSECURITY]
+tags: [PHISHING,CYBERSECURITY,MALWARE,JAVASCRIPT]
+---
+
+## A Polymorphic Phishing Page That Occasionally Breaks Itself
+
+**Source:** SANS ISC  
+**Date Published:** August 27, 2026  
+
+But even something that seems to be "run-of-the-mill" at first glance can sometimes turn out to be quite interesting. One such message led to a URL which, instead of displaying a phishing page, caused the browser to remain effectively stuck for about 30 seconds, while utilization of one CPU core in the virtual machine I was using quickly rose to 100%. The delay was not caused by the server, but instead something in the page itself was preventing the browser from finishing its work. A quick look at the heavily obfuscated JavaScript showed the reason: the script contained two functions where the counter 'k' was not declared locally. Since the counter 'k' used by an inner function was global, this final call also changed the value of 'k' used by the outer loop, preventing it from progressing beyond 49. This explained both why the page never rendered and why the browser was keeping one CPU core rather busy.
+
+However, upon accessing the original URL again a little later, the page loaded normally. More interestingly, while all of the resulting pages ultimately displayed the same credential-stealing form, their source code wasn't the same. Function and variable names differed across page loads, functions appeared in a different order, and a large encoded block of code, which contained the actual payload with the form, changed as well. It therefore appeared that the first response wasn't a permanently broken copy of the phishing page at all. Rather, the server seemed to generate polymorphic variants of the page. To test this hypothesis, a simple script was used to retrieve the same URL 50 times. Among the 50 samples (which all had different SHA-256 hashes), there were 21 different page titles. Importantly, 49 deobfuscated successfully while one became stuck in an endless loop, just like the first page encountered. The reason was effectively identical.
+
+The polymorphism wasn't limited to the initial JavaScript wrapper. The 50 page variants produced 50 different versions of the final phishing HTML. Form and input names, CSS classes, element identifiers, and parameters used when loading images were changed, as was the placement of zero-width characters inside visible strings, which were used as a further obfuscation/anti-analysis mechanism. The rationale behind such an approach is fairly obvious - hashes, randomly generated identifiers and many simple string-based signatures become significantly less useful if every request produces what is basically a completely new copy of a malicious page. Although polymorphism certainly shouldn't be thought of as some universal mechanism for bypassing security controls, it does raise the cost of detection mechanisms which rely too heavily on static artifacts.
+
+However, this polymorphism also raised the cost for the threat actor, since at least some victims would end up with a non-functioning page. Of approximately 56 collected samples, two pages were broken, confirming that the original endless loop wasn't just a "one-off" corrupted response and that whatever generates the code can repeatedly create non-functional pages. While tempting to consider an LLM-based backend given the current popularity of generative AI, there is nothing in the samples which would prove that an LLM is involved here. A conventional polymorphic obfuscator seems a much more plausible explanation, given that the transformations between individual page copies are quite systematic, and the recurring failure caused by reused global variable names would fit quite nicely with a relatively simple random renaming and reordering mechanism. As it turned out, the obfuscation mechanism intended to make the page more difficult to detect was also capable of making it somewhat ineffective at stealing credentials.
+
+[Read full article](https://isc.sans.edu/forums/diary/A%20polymorphic%20phishing%20page%20(that%20occasionally%20breaks%20itself)/33290/)
