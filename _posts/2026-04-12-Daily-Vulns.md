@@ -1,0 +1,12 @@
+---
+title: 2026-04-12 Daily Vulns
+date: 2026-04-12
+categories: [VULNERABILITIES]
+tags: []
+---
+
+# NEW:
+
+| CVE            | vendor-product         | description                                                                                                                                                                                                                                                                                                                                                                   | metric                  | Referenceurl                                                          | title                                                    | GithubURL                                                                                                              |                                                                                                                                   |
+| -------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| CVE-2026-34621 | Adobe - Acrobat Reader | Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file. | CVSS3.1: 9.6 - CRITICAL | [0](https://helpx.adobe.com/security/products/acrobat/apsb26-43.html) | Exploitation: noneAutomatable: noTechnical Impact: total | Acrobat Reader \| Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') (CWE-1321) | [github](https://github.com/cisagov/vulnrichment/raw/795120e29b9639aa3a4495fa1b31e9c67cae8e5d/2026%2F34xxx%2FCVE-2026-34621.json) |
