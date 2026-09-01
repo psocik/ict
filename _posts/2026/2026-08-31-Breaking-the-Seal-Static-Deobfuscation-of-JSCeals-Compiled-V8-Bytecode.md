@@ -1,0 +1,19 @@
+---
+title: Breaking the Seal Static Deobfuscation of JSCeal's Compiled V8 Bytecode
+date: 2026-08-31
+categories: [RESEARCH]
+tags: [MALWARE,DEOBFUSCATION,V8,JSC,CYBERSECURITY]
+---
+
+## Breaking the Seal: Static Deobfuscation of JSCeal's Compiled V8 Bytecode
+
+JSCeal is a stealer delivered as compiled V8 bytecode (.jsc) and executed by a bundled Node.js runtime, targeting cryptocurrency applications. Its campaign activity dates back to March 2024. Unlike ordinary JavaScript malware, JSCeal reaches the analyst after two transformations have already removed much of the information that source-oriented tools depend on. First, the JavaScript is heavily obfuscated. Then it is compiled into V8's internal bytecode representation and shipped as cached data rather than source code. The resulting format is version-specific, poorly served by mature reverse-engineering tooling, and unsuitable for most standard JavaScript deobfuscation workflows.  
+
+In 2024, our colleague Moshe Marelus published View8, an open-source decompiler for V8 bytecode. We used it as the foundation for a static deobfuscation pipeline tailored to the patterns found in JSCeal. During this work, we extended View8 to make its output reproducible and suitable for automated post-processing, and implemented dedicated passes for value propagation, string reconstruction, control-flow unflattening, proxy and operation-wrapper resolution, and additional cleanup. The goal is not perfect source recovery, but to recover enough structure and semantics to read the malware as code again: follow its logic, compare samples, locate capability branches, and validate behavior against concrete strings, APIs, paths, and data flow. JSCeal payloads include browser and cryptocurrency theft, keylogging, screenshot capture, and a local HTTPS interception proxy.  
+
+The payloads were delivered in campaigns that began with malvertising and were followed by multiple PowerShell scripts. The last stage consists of two ZIP archives downloaded by PowerShell: winpty-agent.exe - an agent for a hidden Windows console, winpty.dll - a module that allows interaction with the hidden console, app.jsc - The JSCeal malware payload, and preflight.js - a decompression script. The final JSC payload is distributed in Brotli-compressed form and decompressed by preflight.js. The loading is triggered by the last PowerShell script in the chain, containing the command line: `.
+ode.exe -r .eflight.js .ile.jsc`. The JSCeal generation analyzed in depth in this research used a bundled Node.js runtime based on V8 10.2.154.26-node.25. Since the JSC payload is Brotli-compressed, the first step is to remove this layer. The disassembled output is then passed to the View8-based pipeline, which includes decompilation and transformation by multiple deobfuscation passes.  
+
+Our toolkit is publicly available at [GitHub Repository](https://github.com/hasherezade/jsc_deobfuscator). We applied the pipeline to 23 JSCeal payloads collected over several months; it produced analyzable output in all cases. V8 cached data is version-sensitive, so before decompilation we first need to obtain a correct bytecode listing. For readability, our modified View8 marks global identifiers explicitly with a `global_` prefix. This is already significant progress compared with the raw bytecode, but the remaining obfuscation still makes most of the output effectively unreadable. The rest of the pipeline progressively removes those layers and transforms the output into pseudocode suitable for practical analysis.  
+
+[Read full article](https://research.checkpoint.com/2026/breaking-the-seal-static-deobfuscation-of-jsceals-compiled-v8-bytecode/) 
