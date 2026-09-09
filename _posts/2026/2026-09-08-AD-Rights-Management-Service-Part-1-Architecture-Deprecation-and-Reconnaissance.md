@@ -1,0 +1,16 @@
+---
+title: AD Rights Management Service (Part 1) Architecture, Deprecation, and Reconnaissance
+date: 2026-09-08
+categories: [RESEARCH]
+tags: [AD,RIGHTS,MANAGEMENT,SERVICE,ARCHITECTURE,DEPRECATION,RECONNAISSANCE]
+---
+
+## AD Rights Management Service (Part 1): Architecture, Deprecation, and Reconnaissance
+
+Answering six weeks of research into Active Directory Rights Management Services (AD RMS) produced a compiled tool, four independent key-extraction paths, a 255-year non-rotatable private key sitting in a file on my desktop, and a plaintext copy of a document I had encrypted, opened entirely offline, with no server contact and no user rights. **AD RMS** is Microsoft's enterprise digital-rights management system. Microsoft's own documentation describes it as a server role that pairs encryption, certificates, and authentication to build information-protection solutions, and the property it keeps coming back to is persistence: the protection travels with the file no matter where it goes or how it's transported. Microsoft's own threat model for the product enumerates what RMS deliberately does not stop, but nothing on the list contemplates the server's own signing key walking out the door. The design took that for granted, on the assumption that the servers holding the key and the accounts with access to it would be guarded like the privileged assets they are.
+
+The current migration guide states plainly that AD RMS is no longer in active development and recommends moving to **Azure Information Protection (AIP)**. Despite this, the same guide's header reads "Applies to: Windows Server 2025" because the role ships and is fully supported in the current server OS. Microsoft calls the AD RMS configuration database the most important database in the deployment, because it stores the Server Licensor Certificate (SLC), the rights-policy templates, and users' keys. This one database, and every backup of it, concentrates the crown jewels and has to be guarded just as strongly. The SLC certificate is valid for 255 years, from 2002 to 2258, and there is no way to rotate the key behind it. Once that private key is out, it decrypts protected content indefinitely, past the certificate window entirely.
+
+Installing AD RMS creates a set of local groups on the cluster server, including the AD RMS Service Group. Provisioning drops the service account into the Service Group automatically. Membership in this group is what the cluster checks before it answers its administrative surface, the endpoints that expose the configuration and the administrative surface. Because it is a local group, anyone with administrator rights on the RMS server can add themselves to it. Holding this group takes no domain-wide privilege at all, so whoever compromises the member server or the service account reaches it without ever becoming Domain Admin. That gap between how the group looks and what it can reach is the crux of this lab. While the client pipeline, which covers certification, licensing, and template distribution, answers any authenticated domain user, the administrative surface is gated to the AD RMS Service Group.
+
+For more details, check out the full article here: [Read full article](https://www.huntress.com/blog/ad-rms-architecture-and-recon) 
