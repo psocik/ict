@@ -1,0 +1,18 @@
+---
+title: 3BB Attacker Used MeshCentral Backdoor for Root Access
+date: 2026-09-14
+categories: [CYBERSECURITY]
+tags: [3BB,MESHCENTRAL,MALWARE,CYBERSECURITY,THAILAND]
+---
+
+## 3BB Attacker Used MeshCentral Backdoor for Root Access
+
+An attacker was operating inside the network of 3BB, one of Thailand's largest broadband providers, and maintained remote control of internal machines using a legitimate management tool called MeshCentral, threat intelligence firm Hunt.io said. The company uncovered the intrusion by examining a server the attacker had left open on the internet, which held the attacker's own tools and a list of machines already under their control. The researchers captured the exposed server on June 3, 2026, while the operation was still live. One recovered file showed the attacker gaining full administrative control, known as root, of an internal server.
+
+To maintain that access, the attacker installed MeshCentral, a free tool that IT teams typically use to manage computers remotely. The recovered settings show it was configured as a hidden backdoor, with the agents reporting to a control server that the attacker ran at www.ayuthaya[REDACTED BY DNB EDITORS TO GET PAST GOOGLE FILTERS].com, under a device group named TH-3BB. A device list recovered from the server named the machines enrolled in the attacker's MeshCentral setup. Several were connected and running with root privileges when the list was made. Inside the network, the attacker worked to widen their access. Recovered scripts sprayed passwords against more than 55 internal computers over SSH, probed 3BB's internal sales portal at agent.3bb.[REDACTED BY DNB EDITORS TO GET PAST GOOGLE FILTERS][.]th, and searched compromised machines for stored passwords, database logins, and SSH keys.
+
+Hunt.io said the attacker's main goal was 3BB's subscriber data. Scripts on the server were built to copy out the company's RADIUS databases, which store login credentials broadband customers use to get online. The evidence shows those databases were targeted, not that any data was taken. The same server pointed to a second target, holding a valid VPN certificate from 3BB's systems and active login sessions for services on the Jasmine network. How the attacker initially gained access to 3BB is not established. The server held a full toolkit aimed at a 3BB FortiGate SSL-VPN gateway at mail.3bb.[REDACTED BY DNB EDITORS TO GET PAST GOOGLE FILTERS][.]th, including a complete exploit for CVE-2024-21762, a serious 2024 Fortinet flaw that lets an attacker run code on the device without logging in. The targeted gateway was running a firmware version affected by the flaw, though nothing Hunt.io recovered shows the exploit actually worked or was the entry method.
+
+The recovered toolkit points to a clear set of steps for organizations running similar edge devices and authentication systems. Defenders should patch or confirm that FortiGate SSL-VPN appliances are fixed against CVE-2024-21762. Organizations must also check for MeshCentral agents they did not install, and for connections to management servers they do not recognize. Additionally, it is recommended to rotate credentials that may have been exposed, including SSH keys, database and RADIUS passwords, VPN certificates, and application secrets. Key indicators from the report include: attacker's server IP address 92.63.[REDACTED BY DNB EDITORS TO GET PAST GOOGLE FILTERS][.]133, MeshCentral control server domain www.ayuthayatech[.]com, and targeted devices mail.3bb.co[.]th and agent.3bb.co[.]th.
+
+[Read full article](https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html) 
