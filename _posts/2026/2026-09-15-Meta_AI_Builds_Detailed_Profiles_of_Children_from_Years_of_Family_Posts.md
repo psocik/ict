@@ -1,0 +1,18 @@
+---
+title: Meta AI Builds Detailed Profiles of Children from Years of Family Posts
+date: 2026-09-15
+categories: [TECHNOLOGY]
+tags: [META,AI,PRIVACY,SOCIALMEDIA,CHILDREN]
+---
+
+## Meta AI Builds Detailed Profiles of Children from Years of Family Posts
+
+At the start of September, Kalie Robins posted a video of her young daughter on Facebook. Under the video of Robins and her daughter singing in a car, Facebook's Meta AI system displayed a suggested question: **"Who is the child passenger?"** Robins was shocked that Facebook would ask this question about a minor, prompting her curiosity to click it. That's when a flood of automated stalker-type behavior began.
+
+In an Instagram post, an enraged Robins described what happened: **"It starts pulling completely separate information for each of my kids."** That included names, birth dates, and videos of them. The site also pulled up a picture of her newborn daughter that Robins' mother had posted on Facebook years ago, along with a long-deleted picture that Robins said had once been in her own account. The site then presented another question: **"Where does Kalie Robins live?"** An increasingly outraged Robins clicked that question. She described the results: **"[Facebook] started digging through completely unrelated stuff from years of my life."** It dug through old posts that hinted at where she had lived in the past and newer posts that connected her to her current home. It finished by attempting to pinpoint her location. She expressed shock that Facebook would piece together snippets of personal information from historical posts and package them into a detailed profile for other users.
+
+Meta launched Meta AI in April 2024 and has since integrated it into Facebook, Instagram, WhatsApp, and Messenger. It operates across these platforms. Meta admitted in a statement to the Verge: **"The feature never should have prompted the individual with questions like that."** The company stated that the feature had **"missed the mark"** and that it had fixed the issue that caused Meta AI to suggest questions about personal topics. In a classic **"yes, but"** non-apology, a Meta spokesperson also pointed out that the AI only surfaced information drawn from posts the person asking could already access. Meta AI hasn't always respected privacy. In June last year, we reported that users were publicly sharing conversations, often without realizing it. A separate bug we reported the following month could have allowed people to view other users' private Meta AI chats by simply guessing their IDs. Late last year, Meta also started targeting people with ads based on their Meta AI conversations.
+
+While Robins regularly posted pictures and videos of her children, she had no idea that the service could aggregate information from years of posts to profile them. The clearest answer is not to post identifiable pictures of your kids (or other people's) on social media. Not just to stop them from being tracked in a privacy hellscape, but also to reduce the risk of even darker outcomes. Robins described what she planned to do next: **"I'm done. I'm removing any identifiable pictures and videos of our kids."** She added that she'll ask her friends to do the same because, if they don't, Facebook would still be able to harvest her children's pictures from their accounts and use them in the profiles it builds.
+
+[Read full article](https://www.malwarebytes.com/blog/family-and-parenting/2026/09/meta-ai-builds-detailed-profiles-of-children-from-years-of-family-posts)
