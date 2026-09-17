@@ -1,0 +1,18 @@
+---
+title: Data Broker Radaris Loses Domains in Privacy Fight
+date: 2026-09-16
+categories: [PRIVACY]
+tags: [DATA,BROKER,RADARIS,PRIVACY,LAWSUIT]
+---
+
+## Data Broker Radaris Loses Domains in Privacy Fight
+
+The consumer data broker **Radaris.com** has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge in the case ordered that radaris.com and more than a dozen other data broker domains be transferred to the plaintiffs.
+
+In February 2024, Radaris was sued by **Atlas Data Privacy Corp**, a company that has been pursuing data brokers alleged to be violating a New Jersey statute called **Daniel's Law**. The statute allows state law enforcement officials, government personnel, judges, and their families to have their information completely removed from commercial data brokers and people-search services, and provides for fines of **$1,000** per violation against companies that ignore removal requests. Radaris's attorney admitted his clients had invented the CEO pseudonym "Gary Norden," and that Radaris also had issued multiple press releases over the years that quoted the fake CEO. Matt Adkisson, president and CEO of Atlas, said Radaris turned to a tried-and-true playbook: Delaying in court until the last possible minute, and playing shell games with Radaris's true country of origin and the individuals listed as owners and operators of these sites. "We refer to this period as their island-hopping phase. Privacy policies changed constantly, and new entities kept appearing from places like the Marshall Islands, the British Virgin Islands, and Seychelles," Adkisson told KrebsOnSecurity.
+
+Atlas told KrebsOnSecurity that it has obtained more than **10,000 emails and documents** in the course of litigation, and that those messages confirm previous reporting on the owners and operators of Radaris and its myriad companies. These emails clearly establish that the nominal legal vehicles -- Radaris America, Inc.; Bitseller Expert Limited; Digital Orbit Corp; Core Solutions Group Inc; Lucky Solutions Inc; Virtura Corp; Veripages Inc.; Nuform Solutions Inc.; Growth Data Advisors Inc.; Property Experts, Inc -- are all administered by the same three or four people from the same mailboxes, share one bank or payment card set, and are all managed from one virtual office address. According to Atlas, the emails also show Radaris.com earns approximately **$42,000 a month**.
+
+The Radaris family of companies is still potentially facing fines of **$1,000** per alleged violation of Daniel's Law. However, Daniel's Law is facing a constitutional challenge from virtually all of the **150** other consumer data broker firms being sued by Atlas. At least **70** of the Atlas lawsuits have been moved to federal court, challenging the New Jersey statute as overly broad and a violation of the First Amendment. Meanwhile, at least **14** other states have now passed laws modeled after the New Jersey statute, though West Virginia's Daniel's Law was ruled facially unconstitutional by a federal district court in August 2025.
+
+[Read full article](https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/)\n
