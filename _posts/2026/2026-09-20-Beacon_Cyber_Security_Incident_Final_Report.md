@@ -1,0 +1,18 @@
+---
+title: Beacon Cyber Security Incident Final Report
+date: 2026-09-20
+categories: [CYBER SECURITY]
+tags: [CYBER SECURITY,DATA BREACH,AWS,INCIDENT REPORT]
+---
+
+## Beacon Cyber Security Incident Final Report
+
+In July 2026, we experienced a cyber-security incident in which an unauthorized third party gained access to our systems. Our investigation has concluded that this unauthorized access occurred on **27 July 2026** at **01:20:16 UTC**. On **29 July**, we discovered suspicious activity in our AWS (Amazon Web Services) environment. Shortly thereafter, our findings indicated that a copy of our database, which holds all Beacon customer data, was made. There was a significant increase in data transfer, suggesting substantial downloads occurred. While there is no evidence to show exactly what these downloads contained, the volume of data transfer suggests that the unauthorized third party may have exported the entire database, containing all data and attachment files for all customers. Although the data was encrypted at rest, the threat actor had valid credentials, allowing the download process to decrypt the data. Importantly, there is no evidence that any payment details from payment processors have been compromised.
+
+We decided it was better to inform you all of what we knew and suspected than to wait until we had more information, so we contacted customers, the ICO, and law enforcement on **3 August**.
+
+The probable root cause of this incident was a compromised AWS access key. Such "access keys" are credentials used to allow the Beacon application to communicate securely with Amazon Web Services, our primary cloud hosting provider. Our understanding is that this access key was inadvertently exposed in our application code and was subsequently used to gain unauthorized access to our AWS environment. We have not engaged with the threat actor, though they contacted us once towards the conclusion of our investigation, only to indicate they would be deleting any data they have exfiltrated and that no copy would be retained, sold, or shared. Given these are criminal actors, we did not respond, and our work is uninfluenced by this message. Dark web monitoring has found no mention of this incident or data related to it online. There is no evidence that this was a targeted attack on Beacon or any specific Beacon customer.
+
+We acted quickly to identify the threat, contain it, and eradicate the vulnerability. The vulnerability that enabled this exploit has been remediated, and we have implemented multiple checks to ensure this cannot happen again. We then changed every key that might have been compromised and made updates to ensure this couldn't happen again. After containing the initial incident and eradicating the likely root cause, no further suspicious activity or ongoing unauthorized access to our systems has been identified. Control Risks, our third-party cyber-security experts, have verified that our eradication work has been effective in containing the incident, following no further indications of unauthorized access. More recently, we engaged another third-party cyber-security team to double-check these findings. The results of this second review can be found in Appendix 2. Our systems are secure and operating normally.
+
+[Read full article](https://cdn.prod.website-files.com/6369f7fe243b240624080be7/6a99303116408f423ae78fe2_200e7238def89b6f82b7a023e5adb7b8_Beacon%20Cyber%20Security%20Incident%20Final%20Report%20-%20September%202026.pdf)\n
