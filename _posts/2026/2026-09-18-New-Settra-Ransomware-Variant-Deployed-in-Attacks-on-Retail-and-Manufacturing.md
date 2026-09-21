@@ -1,0 +1,20 @@
+---
+title: New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing
+date: 2026-09-18
+categories: [CYBERSECURITY]
+tags: [RANSOMWARE,SETTRA,CYBERSECURITY,RETAIL,MANUFACTURING]
+---
+
+## New Settra Ransomware Variant Deployed in Attacks on Retail and Manufacturing
+
+A new ransomware variant named **Settra** has been deployed in incidents targeting the retail and manufacturing sectors, according to Huntress. The variant was first observed in June, and Huntress researchers highlighted notable post-compromise techniques used by threat actors deploying Settra in attacks against an organization in the consumer services and retail sector in July, and a manufacturing firm in September. These techniques include deploying remote monitoring and management (RMM) tools for persistent access, efforts to disable the victims' recovery options, and installing bring your own vulnerable driver (BYOVD) to impacted systems. 
+
+The Huntress blog, published on September 17, highlighted how previous research on Settra showed the variant was used for double-extortion tactics, with the attackers threatening to release sensitive corporate information alongside encrypting systems. There is currently not enough evidence to state that Settra is a ransomware-as-a-service (RaaS) operation, the researchers noted. 
+
+In the July attack on a retail organization, the threat actor installed the **MeshAgent RMM** in the victims' environment, which connected to an IP address linked to the command-and-control (C2) infrastructure. The next day, the ransomware executable was launched from the C:\Perflogs folder. This led to victim files being encrypted and renamed with the .locked file extension, before a ransom note was created. EDR telemetry showed that immediately after the ransomware executable was launched, the threat actor took steps to prevent the victim organization's recovery. This included clearing several Windows Event Logs, disabling the Windows Recovery Environment, using `ipconfig /flushdns` to flush the DNS cache, and running the diskpart native Windows utility via a script to remove a recovery partition. Additionally, threat actors used the command `cmd.exe /c cipher /w:D:\ >nul 2>&1` to launch the native Windows cipher utility to overwrite free space on multiple file volumes. This was done to make it more difficult to recover deleted data. 
+
+In the September attack on a manufacturing organization, similar techniques were used by threat actors, including the installation of the **MeshAgent RMM** and the disabling of recovery options once the ransomware executable was launched. However, there was one notable addition - the use of **BYOVD**. These drivers are installed for a range of purposes, including impacting onboard security tooling and crashing services related to antivirus applications. The workstation name **WIN-LIVFRVQFMKO** was associated with the malicious activity carried out during the September incident. This name was previously observed as associated with other incidents going back to December 2024 by Huntress. 
+
+In both incidents, the ransomware executable was named for the impacted organization's domain name, appended with _win64.exe. The researchers wrote, "While there were slight differences between the two incidents, such as the naming and C2 IP address of the MeshAgent RMM, as well as the folders the threat actors operated from, the overall conduct of the attacks were remarkably similar." The researchers urged security teams to stay up-to-date with these variants and the post-compromise techniques used to help detect and respond to such attacks. Defenders should also continue to focus on the **fundamentals** of cyber defense to prevent these attacks from occurring, the blog added.
+
+[Read full article](https://www.infosecurity-magazine.com/news/settra-ransomware-retail/) 
