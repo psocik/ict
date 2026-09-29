@@ -1,0 +1,18 @@
+---
+title: Russian Tech Surveillance Company Infiltrated Europe's Law Enforcement Agencies
+date: 2026-09-27
+categories: [TECHNOLOGY]
+tags: [RUSSIA,SURVEILLANCE,LAW ENFORCEMENT,DIGITAL FORENSICS]
+---
+
+## Russian Tech Surveillance Company Infiltrated Europe's Law Enforcement Agencies
+
+A U.S.-based data-extraction firm accused of being secretly run from Russia has worked on EU-backed projects and sold its services to European law enforcement agencies, according to documents seen by POLITICO. The U.S. Justice Department last week charged Oxygen Forensics -- officially headquartered in Virginia -- with concealing that it was actually owned and operated by Russians. The company develops and sells powerful software capable of extracting and analyzing information from smartphones and computers, a process known as **digital forensics**. 🚀
+
+According to public records reviewed by POLITICO, Oxygen was used in at least two EU-funded projects aimed at improving how electronic evidence is collected, processed, and shared in criminal investigations. The first project, **EVIDENCE**, which received more than €1.9 million in EU funding between 2014 and 2016, listed Oxygen Forensics among the companies consulted on how Europe could better handle and exchange digital criminal evidence. The second project, **INSPECTr**, backed under Horizon 2020, was designed to help European police bring together and analyze digital evidence collected using different tools. Although both projects were launched well before Russia's February 2022 full-scale invasion of Ukraine, INSPECTr continued to operate until 2023. A Commission spokesperson stressed that Oxygen Forensics was not a member of either consortium, "and hence did not receive funding under these projects from the Commission."
+
+A statement published by the U.S. Justice Department found Oxygen Forensic's software was developed and managed by a team in Russia under the direction of Russian national Oleg Sergeyevich Davydov, but purported to be led by Lee Reiber. Reiber has since been arrested in the U.S., and Davydov was arrested Sunday at London's Heathrow Airport. Prosecutors allege that after Washington imposed sanctions on Russia in 2022, Oxygen's Russian owners concealed both their ownership and the continued development of the company's software in Russia. The five Russians behind Oxygen Forensics also controlled a Russian sister company, MKO Systems, that sold the same underlying technology to the Russian Security Service (FSB) and the country's Interior Ministry.
+
+Oxygen's products have been accredited and purchased by multiple national police agencies across Europe, including those in Germany, Spain, Italy, and Poland, according to notices in the EU tender database. A Hungarian government procurement document shows that the Hungarian police signed an IT contract in December 2024 with Oxygen Forensics worth 10.14 million Hungarian forints (€27,000) which ran through December 2025. Natalia Krapiva, senior legal counsel at digital rights group Access Now, said civil society organizations had warned for years about Oxygen Forensics' Russian ownership and development links. Krapiva stated, "If in fact Russian-made software designed for the FSB and Investigative Committee was used for handling EU Commission criminal evidence database, it raises a serious possibility of sensitive information being compromised and accessed by Russian authorities." She added, "We call on the EU and every government using these tools to suspend them and fully investigate how a Russian-owned company spent a decade inside Western law enforcement." 🔍
+
+[Read full article](https://www.politico.eu/article/russia-tech-surveillance-company-infiltrated-europes-law-enforcement-agencies/) 
