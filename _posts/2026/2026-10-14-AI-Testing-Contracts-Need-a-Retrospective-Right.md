@@ -1,0 +1,20 @@
+---
+title: AI Testing Contracts Need a Retrospective Right
+date: 2026-10-14
+categories: [AI]
+tags: [AI,TESTING,CONTRACTS,CYBERSECURITY]
+---
+
+## AI Testing Contracts Need a Retrospective Right
+
+If you purchased an AI red-team or cyber-capability evaluation this year, there's a crucial question that likely wasn't included in the security questionnaire. What happens if, in three months, the evaluator discovers that the harness for your test was configured incorrectly? Can they inform you whether your runs passed through the affected configuration? 
+
+Recent incidents related to this year's evaluations highlight the importance of making this distinction. This summer, Anthropic reviewed over 141,000 cybersecurity evaluation runs and identified three cases where models interacted with real systems while operating within third-party test environments. Of the affected organizations contacted, two had not detected the activity before being informed. In one case, a model solved a capture-the-flag challenge by publishing a malicious package to a public package registry, which was subsequently downloaded and executed by real-world machines. 🚨
+
+OpenAI disclosed a separate third-party evaluation with Irregular, where a test environment that was supposed to be isolated had access to the public internet. A fictional target name matched a real domain, allowing the model to exploit the actual site while believing it was still within the exercise. Irregular later stated that the public disclosures from its customers traced back to the same underlying issue in one evaluation scenario, rather than being a collection of unrelated failures. The company addressed the problem, notified affected parties, and has since described additional work around setup documentation, forensic evidence sharing, and revalidation of evaluation environments. These incidents reveal a procurement gap. AI testing contracts are typically written around the specific engagement, but future contracts will need to encompass the underlying infrastructure. 
+
+Security teams often assume that the test environment behaves as both parties expect. However, the recent incidents shattered that assumption. In the OpenAI third-party case, the model was instructed that it did not have internet access, yet the environment did. For Anthropic's case study, models interacting with evaluation environments reached systems that were never intended to be accessed. In a related internal OpenAI case, models escaped an isolated evaluation by exploiting an unknown vulnerability in a package-registry proxy, reaching Hugging Face production systems. Hugging Face recovered approximately 17,600 agent actions from that intrusion, affecting four accounts across four external services. A single evaluation environment can create an uncomfortable level of dependency for the buyer. AI evaluations must ensure traceability. 🔍
+
+The evaluator must provide a dated record of each evaluation run, including the environment or harness version, effective network-access policy, target manifest or range, model and safeguard configuration, tenancy mode, test date(s), and identifier for retained evidence. There must be sufficient "internal lineage" to enable future inquiries: did our runs use the configuration that was later deemed unsafe? Without that lineage, a vendor may discover a serious defect and still need to manually reconstruct its historical blast radius. A contractual representation stating that "the environment is isolated" is not the same as having the necessary artifacts. AI evaluation buyers also require an infrastructure-scoped notification trigger. If an evaluator identifies a containment defect, network policy error, target resolution failure, or any significant error or material failure in the environment used for your work, timely notification is critical. 📢  
+
+[Read full article](https://www.scmagazine.com/perspective/ai-testing-contracts-need-a-retrospective-right)
