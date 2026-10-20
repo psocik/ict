@@ -1,0 +1,16 @@
+---
+title: Inside Cairn Open Windows into Massive AI-Driven Cyber Operations
+date: 2026-10-19
+categories: [CYBER SECURITY]
+tags: [AI,CYBER OPERATIONS,PENETRATION TESTING,SECURITY,MALICIOUS ACTIVITY]
+---
+
+## Inside Cairn: Open Windows into Massive AI-Driven Cyber Operations
+
+An investigation by NorForge into publicly exposed AI-driven penetration-testing control panels has uncovered how they are extensively used in malicious cyber operations. One of these is **Cairn**. In this setting, Cairn is an AI-powered hacking system. Give it a target and an objective, and it can coordinate AI agents to investigate the target, search for security weaknesses, and attempt to break in. 🚀 More than 20 exposed Cairn panels were identified as likely associated with malicious activity, providing an unusually detailed view of how threat actors select targets, direct autonomous agents, exploit vulnerabilities, and establish persistent access to compromised systems. A considerable number of apparently legitimate red team operations were also exposed this way, potentially placing clients at risk.
+
+In September 2026, Gambit Security reported on a criminal intrusion campaign targeting online marketplaces. They recovered an attacker's staging server and found the use of AI harnesses, such as **Hermes**, **Strix**, and **Cairn**. Quick searches using the Shodan and Censys search engines reveal hosts running what appear to be AI harnesses of different kinds. But there are quite a few of these interfaces left open by their operators. And apparently, one of the most neglected platforms is Cairn. Our continued scans revealed new panels coming online in short order; and targeting information, language, and instructions showed many of them to belong to the same threat actors. However, it is the nature of these panels that they reveal a great deal of sensitive information about the targets; including who they are, what weaknesses have been uncovered, account secrets, API keys, and whether they have been compromised or not.
+
+But even filtering out those, more than 20 such panels were identified as likely malicious. As far as we could see, all appeared to have financial motivation; there was no obvious state-sponsored intrusion activity. Much of the observed activity seemed to coalesce around a handful of clusters, where the exposed panels contained information that tied them together. This activity cluster uses Chinese language and is by far the most active of the actors that expose their panels. The operation is massive, with over 1100 attack projects spread over the 14 dashboards likely associated with this group. AIA0001 targets a wide swath of organizations, mostly in the US, Japan, and Australia. The aim seems to be to gain persistent access to e-commerce/payment infrastructure for later monetization. This group currently seems to prefer hosting their panels via AS56594, Cgi Global Limited. We assess this cluster to be malicious with high confidence.
+
+[Read full article](https://norforge.com/blog/inside_cairn)
