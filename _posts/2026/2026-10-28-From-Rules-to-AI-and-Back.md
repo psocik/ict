@@ -1,0 +1,18 @@
+---
+title: From Rules to AI and Back
+date: 2026-10-28
+categories: [TECHNOLOGY]
+tags: [FRAUD,AI,MACHINE LEARNING,TECHNOLOGY,PAYMENT SYSTEMS]
+---
+
+## From Rules to AI and Back
+
+Fraud-prevention systems have to balance several competing demands: catching fraudulent activity without blocking legitimate customers, adapting quickly to new attack patterns, processing decisions efficiently, and keeping those decisions explainable. This article discusses the evolution of fraud prevention techniques, covering the period from the 1970s to the present, when companies moved from rules-based approaches to relying on Machine Learning (ML) and then eventually adopted hybrid approaches.
+
+In 1973, Visa launched VisaNet that brought computerized authorization, clearing, and settlement to card transactions. The system relied on static rules to prevent fraudulent transactions. Most rules-based systems were concerned with card-present fraud, relying on velocity checks, geo anomalies, and BIN blocklists. Rules shined when it came to explainability: they were easy to understand and audit. However, fraudsters were constantly adapting their tactics to overcome new security measures. Static rules, meanwhile, were too rigid to catch new fraud schemes, and rule sets had become extremely complex and hard to maintain. To deal with the evolving fraud tactics and get around the limitations of static rules, companies turned to Machine Learning techniques.
+
+Visa deployed a neural network-based AI for transaction scoring in 1993. It wasn't until the 2010s that machine learning models gained wide adoption. By that time, companies had accumulated high volumes of labeled data. Significant advances in neural architectures and gradient-boosted tree algorithms allowed companies to use that data to deploy machine learning systems in their pipelines. Mastercard launched its Decision Intelligence platform in 2016. It analyzes each transaction and checks it against the cardholder's past behavior. This new platform allowed Mastercard and issuers to reduce false positives. PayPal aimed at significant fraud reduction by adopting machine learning. They built an ensemble of deep learning and gradient boosting models. The system checked multiple parameters to score transactions: device fingerprint, account-level risk, and transaction graph. The company later reported a transaction loss rate of just 0.08% of its total payment volume, including losses from fraud.
+
+Every fraud-prevention system has to balance two costly kinds of error: letting fraudulent transactions through and blocking legitimate ones. Most companies naturally aimed at catching as many fraudulent transactions as possible, minimizing false negatives. But stricter controls naturally led to a higher number of false positives. Research by Aite Group projected that losses from false declines would reach $443 billion in 2021, exceeding the losses caused by fraud itself. More recent Aite-Novarica research put the average false-decline rate for US e-commerce merchants at 1.16%. With more than $960 billion in US online sales in 2021, that translated into over $11 billion in lost legitimate sales. High rates of legitimate transactions being turned down caused customers to feel upset and angry, leading to reputational damage. Mastercard's Decision Intelligence cut false positives in half. With around 75 billion transactions a year, this reduction was reported to save hundreds of millions of US dollars. Stripe also launched its Radar Engine in 2016, concentrating on the merchant and calculating an acceptable level of risk for each.
+
+[Read full article](https://hackread.com/from-rules-to-ai-and-back/)\n
