@@ -1,0 +1,18 @@
+---
+title: DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment
+date: 2026-11-02
+categories: [CYBERSECURITY]
+tags: [DARKBLINDERS,CYBERSECURITY,IRAN,ESPIONAGE,MALWARE]
+---
+
+## DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment
+
+Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, this campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud environment in the Kurdistan Region. This activity has been attributed to **DarkBlinders**, an Iran-nexus group active since at least September 2024 and linked to attacks aimed at aviation infrastructure and telecommunications in the U.A.E. and Iraq. The group relies on spear-phishing as an initial access pathway to lure recipients into opening trojanized utilities or clicking on attacker-controlled websites. 🚀  
+
+Previous attack chains documented by Elastic Security Labs and Group-IB have led to the deployment of **SHELBYLOADER** (aka **HOTAIR**), which is launched via DLL sideloading to ultimately execute a backdoor called **SHELBYC2** (aka **AEROSTAT**) that uses GitHub for command-and-control (C2), data exfiltration, and remote control. Palo Alto Networks shed light on a campaign dubbed **Blinder Tunnel**, where the threat actor (CL-STA-1178) masqueraded as the Dubai Airports IT department to distribute malware-laced coding challenges to high-value targets. This bogus recruitment scheme was detected in late March 2026, with evidence indicating attackers staged infrastructure since November 2025. The attack chain uses three techniques for persistent access: a malicious C# project ".csproj" file for AppDomainManager injection, DLL sideloading to deliver ShelbyLoader V2, which then launches SHELBYC2. A tunneling utility called **Blackwood** is also deployed via SHELBYC2.  
+
+"The attackers behind the activity used tailored social engineering techniques to masquerade as Dubai Airports recruiters, using a trojanized Visual Studio coding challenge to target a high-value job seeker based in Iraq," Unit 42 said. "The campaign is characterized by misuse of built-in developer tools and DLL sideloading. Attackers also used AppDomainManager hijacking to bypass security monitors like ETW [Event Tracing for Windows]." The latest findings from Dream show that DarkBlinders continues to rely on social engineering, combining credential phishing and malware delivery through government, webmail, and cloud-service lookalike domains.  
+
+Dream said the DarkBlinders activity belongs to the same operational cluster as **UNC5795** and **Dust Specter**, citing infrastructure and malware overlaps. "Historical server fingerprints, overlapping victimology, and supporting attribution research lead us to assess with medium confidence that UNC5795 and UNC5187 may represent related sub-clusters within the broader APT34 group," it added. In a related development, **Prince of Persia** (aka **Infy**), an Iranian government-sponsored group, has been observed running one of its C2 servers from the U.S. this year. "The Iranian threat actor decided to host its new C2 server on U.S. soil -- at the same time as the beginning of the recent hostilities between Iran and the United States. This is the last place we expected to find the threat actor hiding," noted Tomer Bar of Semperis.  
+
+For more details, check out the full article here: [Read full article](https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html)  
