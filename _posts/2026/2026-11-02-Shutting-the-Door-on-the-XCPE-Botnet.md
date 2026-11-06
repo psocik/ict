@@ -1,0 +1,18 @@
+---
+title: Shutting the Door on the XCPE Botnet
+date: 2026-11-02
+categories: [CYBERSECURITY]
+tags: [XCPE,BOTNET,MALWARE,GOOGLE,VIDEOSTRONG]
+---
+
+## Shutting the Door on the XCPE Botnet
+
+🚪 Last week, Google and industry partners dismantled the XCPE backdoor that had enrolled over 1.3 million set-top boxes into a botnet. We assess with high confidence that this backdoor and botnet were intentionally developed, deployed, and operated for financial gain by **Videostrong Technology Co.**, an Android Original Equipment Manufacturer (OEM) and Original Design Manufacturer (ODM). Videostrong monetized the backdoor by selling access to criminal affiliates and loading those affiliates' malware modules onto infected devices. These secondary modules were conducting ad-fraud, silently enrolling infected devices into residential proxy networks, and loading additional malware onto XCPE-compromised devices.
+
+🔍 We also took action to disrupt the command and control (C2) domains that operate these affiliate modules. Because these affiliates have diversified distribution channels for their modules beyond XCPE, we assess that taking down their C2 domains will sever access to at least **10 million** additional compromised devices. We found this malicious software built directly into many different device models and brands over multiple years, supported by dedicated infrastructure and constantly evolving configurations to evade detection and manage their affiliates. As a result, Google has cut ties with Videostrong and banned them from making devices with preloaded Google apps. Google undertook legal action to take down the domains and servers Videostrong used to control the botnet and install malware modules, as well as C2 domains used by over a dozen malware families.
+
+🛡️ Videostrong employed obfuscation techniques to exploit a gap in our tests and load malicious code after the device's first boot. As a system preload, x.cpe cannot be removed by the user. If x.cpe is uninstalled from /data/app/, upon reboot the x.cpe service BootReceiver follows the same routine outlined above and reinstalls the package. The backdoor is able to silently download additional files to the device and execute them without user consent because it first wipes user consent configuration on the device and then disables Google Play Protect. In many variants of com.abc.nexus, we observed the extraction of a sophisticated anti-analysis and process hardening utility **libseccomp_guard.so**, which filters system calls to prevent the pausing or termination of individual threads, denies cross-process interference to ensure isolation, and prevents the spawning of child processes.
+
+🔄 Earlier versions of x.cpe directly embedded malicious monetization modules. In late 2024, possibly as a response to earlier Google enforcement related to BadBox, Videostrong removed malicious modules from x.cpe and introduced a separate malicious package they developed, com.abc.nexus, which x.cpe routes instructions and data to via Inter-Process Communication (IPC). Since August 2026, new dropper packages have been installed via the MQTT channel, which appear to be synchronized with the mass-uninstallation of com.abc.nexus across the botnet. We assess this may represent a new evolution of the malware to further evade detection. The botnet is globally dispersed, with the overwhelming majority of the infected devices being Android TV set-top boxes, but also including other Android-based IoT devices like telehealth devices, karaoke machines, and digital signage devices.
+
+[Read full article](https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet/)\n
