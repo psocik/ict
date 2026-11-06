@@ -1,0 +1,22 @@
+---
+title: Beyond Cold Storage Why Hardware Wallets Need Open Source and Clear Signing
+date: 2026-11-05
+categories: [CRYPTOCURRENCY]
+tags: [HARDWARE WALLETS,OPEN SOURCE,SECURITY,CRYPTOCURRENCY,SIGNING]
+---
+
+## Beyond Cold Storage: Why Hardware Wallets Need Open Source and Clear Signing
+
+For years, hardware wallets have been treated as the gold standard for protecting cryptocurrency. But recent attacks have exposed a gap in that model: a well-protected key offers little defense if the person using it can't tell what they are signing. The Bybit hack in February 2025 made that painfully clear. North Korea's Lazarus Group compromised a developer's machine at Safe{Wallet}, the multisig platform Bybit used to manage its Ethereum cold wallet, and injected malicious code into the signing interface. Bybit's signers saw what looked like a routine transfer. What their hardware wallets actually signed was a change to the wallet's underlying logic that handed control to the attackers. Roughly $1.5 billion in ETH was stolen, the largest crypto theft on record at the time. The keys were never extracted, and the devices did exactly what they were designed to do. This raises an uncomfortable question for the industry: how much protection does cold storage provide if users can't independently verify what they authorize? 
+
+Bybit was not an isolated case. In October 2024, attackers drained roughly $50 million from lending protocol Radiant Capital using a similar playbook. Malware on three developers' devices showed legitimate-looking transactions in the Safe interface, while the hardware wallets were signing a transfer of contract ownership. Each signer approved what they believed was routine.
+
+A hardware wallet can keep a key perfectly isolated while still signing a transaction that drains funds, changes account permissions, or grants a malicious contract access to assets. Blind signing is when a hardware wallet asks a user to approve a transaction it can't display in readable form, showing raw contract data or incomplete details instead of a clear account of what the transaction will do. When the screen on the connected computer is also compromised, as it was at Bybit, the signer has no trustworthy view of the transaction anywhere. For anyone managing large holdings, multisig accounts, or DAO treasuries, verifying intent matters just as much as offline key storage.
+
+Open-source development replaces some of that trust with inspection. When firmware is public, independent researchers can review the code, find vulnerabilities, and propose fixes. Open-source hardware extends the same idea to circuit-board designs and component layouts. Reproducible builds close part of that gap by letting anyone compile the firmware from source and confirm the result matches the binary the manufacturer ships.
+
+A trustworthy device combines several layers, including secure key generation and storage, and firmware transparency. Transaction verification is the most overlooked requirement; a device should do more than confirm it received a transaction; it should show what the transaction will do, including transfers, token approvals, contract calls, and changes to account permissions. Clear signing is the alternative: the hardware wallet decodes the transaction and shows, in plain language on its own screen, what it will actually do. Where that translation happens is the crucial part; if the computer or browser is compromised, nothing it displays can be trusted. The hardware wallet has to interpret the transaction independently and present its own account of what will happen. 
+
+The industry is starting to standardize this, with ERC-7730, a format first proposed by Ledger and now stewarded by the Ethereum Foundation, letting developers describe how their contracts' functions should be displayed. On-device decoding won't stop every attack, but it gives signers a real chance to catch something suspicious before they approve it, which is exactly what Bybit's signers lacked. Open-source firmware, inspectable hardware, sound key generation, and on-device transaction decoding each address part of that gap. None is sufficient alone; together, they make a device's security assumptions easier to examine and challenge.
+
+[Read full article](https://hackread.com/hardware-wallets-need-open-source-clear-signing/) 
