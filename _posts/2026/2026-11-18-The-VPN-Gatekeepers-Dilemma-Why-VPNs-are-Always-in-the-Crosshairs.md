@@ -1,0 +1,18 @@
+---
+title: The VPN Gatekeeper's Dilemma Why VPNs are Always in the Crosshairs
+date: 2026-11-18
+categories: [CYBERSECURITY]
+tags: [VPN,CYBERSECURITY,VULNERABILITIES,RANSOMWARE,ZERO-TRUST]
+---
+
+## The VPN Gatekeeper's Dilemma: Why VPNs are Always in the Crosshairs
+
+Since January 2024, the U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added more than 50 vulnerabilities across VPN and firewall products from major vendors to its Known Exploited Vulnerabilities (KEV) catalog. That's roughly one every two to three weeks, and 22 of these have been flagged by CISA as known to have been used in ransomware campaigns. This highlights that traditional VPN architecture puts an enterprise's trust decisions on the most exposed piece of infrastructure it owns. The problem isn't any single team; it's the design flaw in the architecture they're all working with.
+
+Removing product and company names makes it clear that the VPN vulnerabilities attackers actually exploit follow a small number of recurring patterns. Five failure modes account for nearly all of it. **Pre-authentication code execution**, where a VPN concentrator accepts untrusted input from anonymous senders before authentication, is the single most valuable target. Another key pattern is **skipped authentication**, where attackers obtain or forge an artifact representing an authenticated session. Palo Alto Networks' CVE-2026-0257 is a recent example, where GlobalProtect's "authentication override" issued an encrypted cookie, resulting in a fully authenticated VPN session with no username, password, or MFA prompt. **Credential exposure** is also a significant concern, as seen when Fortinet exposed plaintext VPN credentials leading to a public dump covering 87,000 devices.
+
+Additionally, **patch-resistant compromises** are increasingly common, designed to survive a defender's response. In 2024, CISA's Emergency Directive 24-01 required federal agencies to factory-reset compromised Ivanti appliances, yet a follow-on joint advisory warned that a sophisticated actor might retain root-level persistence even after a reset. The UK's National Cyber Security Centre (NCSC) found that the bootkit used against Cisco ASA devices in 2025 "survives reboots and firmware upgrades," prompting CISA's Emergency Directive 25-03. Each of these patterns ultimately leads to network-level access, where a VPN provides an attacker an internal IP address and routes to everything that address can reach. That's why many of these CVEs carry CISA's "known ransomware campaign use" flag.
+
+The industry data shows that defenders are losing the race. Mandiant's M-Trends 2026 reports that "exploits" were the top initial attack vector for the sixth year in a row, with the mean time to exploit now negative, meaning vulnerabilities are exploited before a patch is available. The 2025 Verizon Data Breach Investigations Report (DBIR) found that edge devices and VPNs grew to 22% of vulnerability exploitation targets (from 3%) in a single year. The 2026 DBIR further found that 31% of breaches now begin with vulnerability exploitation, surpassing credential abuse. In 2024, CISA, the FBI, and international partners jointly urged organizations to move away from traditional VPNs toward **zero trust** and **secure access service edge (SASE)** architectures. The Zscaler ThreatLabz 2026 Ransomware Report found that data exfiltration among the ten most active ransomware groups surged 275.8% year over year.
+
+[Read full article](https://www.zscaler.com/blogs/cybersecurity-best-practices/vpn-gatekeepers-dilemma)
