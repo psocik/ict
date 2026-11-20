@@ -1,0 +1,18 @@
+---
+title: Java4Shell Write Once, RCE Everywhere
+date: 2026-11-19
+categories: [SECURITY]
+tags: [JAVA,VULNERABILITY,RCE,OPENJDK,SECURITY]
+---
+
+## Java4Shell - Write Once, RCE Everywhere 🚀
+
+Today, we are disclosing **Java4Shell (CVE-2026-114938)**, a memory-corruption vulnerability in OpenJDK's Base64 decoder. OpenJDK is the most popular Java runtime, and under CVSS 4.0, this vulnerability scores **9.2 out of 10 (CRITICAL)**. Java is the world's third most popular programming language, powering **90% of Fortune 500 companies**. It is the beating heart of the modern economy, with critical sectors such as banking, aviation, and telecommunications relying on it.
+
+Base64 is a common way of representing binary data as text. To decode Base64 faster, OpenJDK uses specialized x86-64 CPU instructions to process many bytes at once. We discovered a bug in that optimized machine-level code that allows malformed input to overwrite neighboring memory. With careful exploitation, this corruption can reveal sensitive memory, similar to what Heartbleed did, or lead to **remote code execution (RCE)**. The corruption can be triggered by just **64 `A` characters followed by a single `=`**. In older OpenJDK 17, the trigger input is **128 of `A` followed by `=`**. Memory corruption is the most common class of vulnerability on the Internet. While Java manages memory on developers' behalf, much of Java itself is written in low-level languages like C, C++, and assembly, where memory corruption remains a significant issue.
+
+Our initial testing demonstrated remote code execution in widely deployed Java applications with their default configurations. We also demonstrated RCE in sample applications built on popular frameworks, including **Apache Struts** and **Spring Boot**. Ordinary features such as authentication and file uploads can expose the vulnerable Base64 decoder, extending the potential impact far beyond the products we tested. Additionally, a client-side exploit was shared, meaning a Java program that opens a TLS connection to a malicious server can be compromised, even if it exposes no service of its own. It took our own Quang Luong an hour to discover the vulnerability and two more hours to develop the first working exploit, with a total token cost of less than **$200**. One important note about this vulnerability is that there is no universal exploit; different steps may be required for exploitation depending on how Base64 is used and how the application functions.
+
+To speed up Base64 decoding, OpenJDK uses specialized **AVX-512 VBMI instructions** on supported x86-64 processors. The bug resides in the hand-rolled assembly code that handles the final few characters. For the **65-character input** described, OpenJDK allocates a **50-byte result array**. After decoding the first 64 characters, the routine mishandles the stray `=` and calculates a negative output length. That invalid length results in a full **64-byte write**, sending **62 bytes past the end of the array**. Java eventually rejects the input, but by then neighboring objects may already be corrupted. Java4Shell is a concrete example where an optimization that few applications needed became a serious security risk for everyone. If you don't need something, there is little reason to keep it running in your systems. Removing code is harder than it sounds, as an apparently unused feature may have hidden dependencies. AI can help make that work practical at a scale we could not previously afford.
+
+[Read full article](https://calif.io/java4shell)
